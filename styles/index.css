@@ -378,6 +378,7 @@ body {
   background-image: url(../images/bottom-bg.svg);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: contain;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(14, 1fr);
@@ -431,7 +432,7 @@ body {
 
 .bottom p{
   font-size: 1.1vw;
-  width: 25vw;
+  width: 30vw;
   margin-left: 1.5vw;
   margin-bottom: 5vh;
 }
