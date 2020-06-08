@@ -35,6 +35,14 @@ body {
   height: 5vh;
 }
 
+button{
+  outline: none;
+}
+
+button{
+  color: #ffffff !important;
+}
+
 .top {
   background-color: #ffffff;
   background-image: url(../images/top-bg.svg);
