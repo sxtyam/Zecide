@@ -414,6 +414,7 @@ body {
   grid-row: 4/11;
   display: flex;
   align-items: center;
+  margin-top: 6vh;
 }
 
 .we-do-text {
@@ -438,6 +439,7 @@ body {
 }
 
 .bottom .download-links{
+  margin-top: 1vh;
   grid-row: 13/16;
   grid-column: 2/5;
 }
