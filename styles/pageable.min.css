@@ -36,9 +36,9 @@
   .pg-pips ul li a.active,
   .pg-pips ul li:hover a.active {
     position: absolute;
-    height: 14px;
-    width: 14px;
-    margin: -7px 0 0 -7px;
+    height: 10px;
+    width: 10px;
+    margin: -7px 0 0 -5px;
     border-radius: 100%;
   }
   .pg-vertical .pg-pips {

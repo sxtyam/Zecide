@@ -21,12 +21,12 @@ function logf() {
 function signf() {
   fname.style.display = "inline";
   lname.style.display = "inline";
-  submitbtn.setAttribute("value", "Sign In");
+  submitbtn.setAttribute("value", "Sign Up");
   logbtn.style.borderBottom = "0px solid #ffffff";
   logbtn.style.fontWeight = "300";
   signbtn.style.borderBottom = "3px solid #ffffff";
   signbtn.style.fontWeight = "800";
   heading1.innerHTML = "Let’s Get Started!";
-  heading2.innerHTML = "SIgn up and get access to all the features of Zecide.";
+  heading2.innerHTML = "Sign up and get access to all the features of Zecide.";
 }
 

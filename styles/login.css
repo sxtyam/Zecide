@@ -42,6 +42,11 @@ body {
   width: 5vw;
 }
 
+.logo img{
+  height: 5vh;
+  margin-right: 0;
+}
+
 .logo span{
  width: 2vw;
 }
@@ -74,6 +79,11 @@ body {
  font-size: 2.3vw;
 }
 
+button:active {
+  background-color: #8dbef0;
+  transform: translateY(4px);
+}
+
 .login h2{
  margin: 2vh 0 4vh 0;
  color: #ffffff;
@@ -94,9 +104,23 @@ button{
  outline: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 .sign-btn{
  border-bottom: 3px solid #ffffff;
  font-weight: 800;
+}
+
+.submit-btn:active {
+  background-color: #8dbef0;
+  transform: translateY(4px);
+}
+
+.google-login:active {
+  background-color: #8dbef0;
+  transform: translateY(4px);
 }
 
 .form-input{
@@ -117,14 +141,17 @@ button{
 }
 
 .submit-btn{
- margin-top: 3vh;
- padding: 15px 30px;
+ margin-top: 4vh;
+ padding: 10px 30px;
  border: none;
+ width: 23vw;
  border-radius: 30px;
  font-size: 1vw;
  font-family: 'Quicksand';
  color: #3b98ff;
+ background-color: #ffffff;
  font-weight: 700;
+ margin-bottom: 4vh;
 }
 
 .login-alt > img{
@@ -146,4 +173,207 @@ p{
 
 input{
  outline: none;
+}
+
+.google-login{
+  width: 16.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 7.2px 30px;
+ border: none;
+ border-radius: 30px;
+}
+
+.google-login img{
+  width: 4vh;
+  margin-right: 1vw;
+}
+
+.google-login span{
+  font-size: 1vw;
+  
+  color: #3b98ff;
+ font-weight: 700;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  animation: fadein 2.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.login .logo {
+  grid-column: 1/8;
+  grid-row: 1/2;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+}
+
+.logo span{
+ width: 30vw;
+ font-size: 4vw;
+}
+
+.logo img{
+  height: 3vh;
+  margin-right: 2vw;
+}
+
+
+.login .login-image {
+  grid-column: 1/8;
+  grid-row: 1/4;
+  margin: 10vh auto auto auto;
+  width: 60vw;
+}
+
+.login .login-bg {
+  grid-column: 1/8;
+  grid-row: 3/8;
+  margin-top: 10vh;
+}
+
+.login .content {
+  text-align: center;
+  grid-column: 2/7;
+  grid-row: 3/8;
+  margin: 16vh auto auto auto;
+}
+
+.login h1{
+ margin: 0;
+ color: #ffffff;
+ font-size: 7vw;
+}
+
+.login h2{
+ margin: 2vh auto 4vh auto;
+ color: #ffffff;
+ font-size: 4vw;
+ font-weight: 300;
+ width: 70vw;
+}
+
+button{
+ border: none;
+ padding: 10px 0px;
+ font-size: 4vw;
+ margin-right: 5vw;
+ color: #ffffff;
+ font-family: 'Quicksand';
+ background-color: rgba(0, 0, 0, 0);
+ margin-bottom: 4vh;
+ outline: none;
+}
+
+.sign-btn{
+ border-bottom: 3px solid #ffffff;
+ font-weight: 800;
+}
+
+.form-input{
+ border: none;
+ padding: 10px 0px;
+ font-size: 5vw;
+ margin-right: 2vw;
+ color: #ffffff;
+ font-family: 'Quicksand';
+ background-color: rgba(0, 0, 0, 0);
+ margin-bottom: 4vh;
+ border-bottom: 1px solid #ffffff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 0.7; /* Firefox */
+}
+
+.submit-btn{
+  width: 70vw;
+ margin-top: 3vh;
+ padding: 4vw 10vw;
+ border: none;
+ border-radius: 30px;
+ font-size: 4vw;
+ font-family: 'Quicksand';
+ color: #3b98ff;
+ font-weight: 700;
+}
+
+
+
+p{
+ color: #ffffff;
+ font-size: 4vw;
+ margin-top: 6vh;
+ margin-bottom: 4vh;
+}
+
+.google-login{
+  margin: auto;
+  width: 56vw;
+}
+
+input{
+ outline: none;
+}
+
+.google-login img{
+  width: 4vh;
+  margin-right: 1vw;
+}
+
+.google-login span{
+  font-size: 4vw;
+  width: 50vw;
+  color: #3b98ff;
+ font-weight: 700;
+ padding: 1.4vh 0;
+}
+
+
+
+
 }
