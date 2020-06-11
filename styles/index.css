@@ -472,6 +472,11 @@ button:active {
   display: none;
 }
 
+.bottom-m-text{
+  display: none;
+}
+
+
 @media screen and (max-width: 600px) {
   @keyframes fadein {
     from {
