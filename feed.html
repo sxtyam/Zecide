@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zecide - Feed</title>
     <link rel="icon" href="images/logo.svg">
+    <link rel="stylesheet" href="styles/feed.css">
 </head>
 <body>
     <div class="upper-nav">
@@ -12,16 +13,19 @@
             <img src="images/logo.svg" alt="">
             <span>Zecide</span>
         </div>
-        <div style="border: 1px solid #DDD;">
+        <div class="upper-nav-1">
+        <div class="search">
+            <input placeholder="Search.." style="border: none;"/>
             <img src="images/search.svg"/>
-            <input style="border: none;"/>
         </div>
         <button class="download-btn">Download the App</button>
+    </div>
         <div class="profile-dropdown">
             <img src="images/profile-img.jpg" alt="">
             <span>Siddharth</span>
-            <img src="images/dropdown-button.svg" alt="">
+            <img class="dropdown-btn" src="images/dropdown-button.svg" alt="">
         </div>
+        
     </div>
     <div class="side-nav">
         <div class="nav-item nav-item-active">
@@ -46,7 +50,7 @@
         </div>
         <div class="nav-item nav-help">
             <img src="images/help.svg" alt="">
-            <span>Help and Support</span>
+            <span>Help & Support</span>
         </div>
         <div class="nav-item">
             <img src="images/about.svg" alt="">
@@ -68,23 +72,25 @@
         <div class="feed-card">
             <div class="feed-card-top">
                 <div class="feed-card-top-left">
-                    <img src="images/profile-img.jpg" alt="">
+                    <img class="feed-profile-pic" src="images/profile-img.jpg" alt="">
                     <div class="feed-card-top-left-1">
                         <span>Siddharth Singh</span>
                         <p>2 Days Ago</p>
                     </div>
-                    <img src="images/verified.svg" alt="">
+                    <img class="feed-verified" src="images/verified.svg" alt="">
                 </div>
                 <div class="feed-card-top-right">
                     <img src="images/z-score.svg" alt="">
+                    <span>1710</span>
                     <img src="images/z-heat.svg" alt="">
+                    <span>0.8</span>
                 </div>
             </div>
             <div class="feed-card-mid">
                 Idea would do good after merger with Vodafone. Idea would sell their tower businesses and acquire more percentage of the final entity, Kumar Managlam Birla would serve as the Chairman. Idea would do good after merger with Vodafone. Idea would sell their tower businesses and acquire more percentage of the final entity.
             </div>
             <div class="feed-card-bottom">
-                <div>
+                <div class="upanddown">
                     <div class="upvote">
                         <img src="images/upvote.svg" alt="">
                         <span>7.1k</span>
@@ -105,6 +111,7 @@
                 <img src="images/send.svg" alt="">
             </div>
         </div>
+        
     </div>
     <div class="trending">
         <div class="trending-top">
@@ -131,5 +138,6 @@
             </div>
         </div>
     </div>
+    <script src="scripts/feed.js"></script>
 </body>
 </html>
