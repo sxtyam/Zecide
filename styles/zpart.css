@@ -41,7 +41,7 @@ a{
     position: fixed;
 }
 
-.trending > div{
+.mascot > div{
     position: fixed;
 }
 
@@ -72,6 +72,7 @@ a{
 .logo span{
     font-size: 1.6vw;
 }
+
 .upper-nav-1{
     display: flex;
     justify-content: space-between;
@@ -161,12 +162,12 @@ a{
 
 .nav-z-part{
     background: #FFFFFF;
-box-shadow: 0px 0px 7px rgba(79, 172, 255, 0.3);
-border-radius: 28px;
-padding: 10px 12px;
-padding-left: 30px !important;
-width: 12vw;
-margin-left: 1.8vw;
+    box-shadow: 0px 0px 7px rgba(79, 172, 255, 0.3);
+    border-radius: 28px;
+    padding: 10px 12px;
+    padding-left: 30px !important;
+    width: 12vw;
+    margin-left: 1.8vw;             
 }
 
 .nav-help{
@@ -180,222 +181,155 @@ margin-left: 1.8vw;
 }
 
 .card-container{
-    grid-column: 4/13;
+    grid-column: 4/10;
     grid-row: 2/8;
     display: flex;
     flex-direction: column;
-    width: 57vw;
+    width: 42vw;
     margin: 0 auto;
 }
 
-.status-card{
-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.07);
-border-radius: 12px;
-padding: 30px 50px;
-color: #aeaeae;
-height: 15vh;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-margin-bottom: 20px;
-}
-
-.status-card span{
-    font-size: 1vw;
-    height: 10vh;
-}
-
-.status-card-lower{
+.question-card{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+    padding: 30px 50px;
+    color: #aeaeae;
+    height: 45vh;
+    width: 35vw;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 5vh;
 }
 
-.status-card-lower img{
-    padding-right: 10px;
+.question-card h2{
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin: 0 0 4vh 0;
+    color: black;
+}
+
+h2.q1{
+    text-align: center;
+}
+
+.q1, .q1-img{
+    display: static;
+}
+
+.q2, .q2-img{
+    display: none;
+}
+
+.q3, .q3-img{
+    display: none;
+}
+
+.q4, .q4-img{
+    display: none;
+}
+
+.question-card p{
+    font-size: 1vw;
+    margin: 0;
+    color: black;
+}
+
+.q-options{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.q-options button{
+    width: 30vw;
+    height: 5vh;
+    font-family: 'Quicksand';
+    font-size: 1vw;
+    color: #000000;
+    text-align: left;
+    background-color: #F3FAFF;
+    border: none;
+    outline: none;
+    padding-left: 2vw;
+    border-radius: 20px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
-.status-card-lower button{
-    height: 4vh;
+.q-options button:focus{
+    background-color: #B8E1FF;
+}
+
+.result-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    height: 5vh;
+    font-size: 1vw;
+    color: #000000;
+    text-align: left;
+    background-color: #F3FAFF;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-right: 2vw;
+}
+
+.result-container > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-container p{
+    white-space:nowrap;
+}
+
+.result{
+    height: 5vh;
+    font-size: 1vw;
+    color: #000000;
+    text-align: left;
+    background-color: #B8E1FF;
+    border: none;
+    outline: none;
+    padding-left: 2vw;
+    border-radius: 20px;
+    margin-top: 0px;
+}
+
+.zpart-btn{
+    height: 5vh;
+    font-size: 0.94vw;
     background-color: #3b98ff;
     color: #ffffff;
     font-family: 'Quicksand';
     border: none;
     border-radius: 20px;
-    padding: 0 30px;
-    cursor: pointer;
-}
-
-.feed-card{
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.07);
-border-radius: 12px;
-padding: 30px 50px;
-color: #aeaeae;
-height: 40vh;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-margin-bottom: 20px;
-}
-
-.feed-card-top{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.5vh;
-}
-
-.feed-card-top-left{
-    display: flex;
-    align-items: start;
-}
-
-.feed-card-top-left-1{
-    display: flex;
-    flex-direction: column;
-    margin: 0.1vh 0.5vw 0 1vw;
-    color: #000000;
-    
-}
-
-.feed-card-top-left-1 span{
-    font-weight: 700;
-    font-size: 1vw;
-}
-
-.feed-card-top-left-1 p{
-    margin: 0;
-    font-size: 1vw;
-}
-
-.feed-profile-pic{
-    width: 3.2vw;
-    height: 3.2vw;
-}
-
-.feed-profile-pic{
-    width: 3.2vw;
-    height: 3.2vw;
-}
-
-.feed-verified{
-    width: 1vw;
-    height: 1vw;
-    margin-top: 0.5vh;
-}
-
-.feed-card-top-right{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 8vw;
-}
-
-.feed-card-mid{
-    color: black;
-    font-size: 1vw;
-    margin-bottom: 4vh;
-}
-
-.feed-card-bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4vh;
-}
-
-.upanddown{
-    display: flex;
-    justify-content: space-between;
-    width: 8vw;
-}
-
-.upanddown img{
-    margin-right: 0.5vw;
-}
-
-.upvote{
-    display: flex;
-    cursor: pointer;
-}
-
-.downvote{
-    display: flex;
-    cursor: pointer;
-}
-
-.comments{
-    display: flex;
-    cursor: pointer;
-}
-.comments img {
-    margin-right: 0.7vw;
-}
-
-.feed-card-comments{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 10vh;
-}
-
-
-.feed-card-comments img{
-    width: 2vw;
-}
-
-.feed-card-comments input{
-    width: 40vw;
-    border: none;
-    border-bottom: 1px solid #e4e4e4;
-    margin: 0 1vw;
-    font-family: 'Quicksand';
+    padding: 5px 30px;
+    /* margin-left: 34vw; */
+    float: right;
+    margin-top: 5vh;
     outline: none;
+    cursor: pointer;
 }
 
-.trending{
-    grid-column: 13/16;
+.mascot{
+    grid-column: 10/16;
     grid-row: 2/8;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-right: 2.5vw;
-    height: 40vh;
+    margin-left: 2.5vw;
+    margin-top: 7vh;
 }
 
-.trending-top{
-    display: flex;
-    flex-direction: row;
-}
-
-.trending h2{
-    font-size: 1.35vw;
-    font-weight: 500;
-}
-
-.trending-top img{
-    margin-right: 1vw;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.trending-bottom{
-    display: flex;
-    flex-direction: row;
-    margin-top: 4vh;
-}
-
-.trending-topics{
-    display: flex;
-    flex-direction: column;
-}
-
-.trending-numbers{
-    display: flex;
-    flex-direction: column;
-    margin-left: 5vw;
-}
-
-.trending-topics span, .trending-numbers span{
-    margin-bottom: 2vh;
+.mascot img{
+    width: 20vw;
 }
