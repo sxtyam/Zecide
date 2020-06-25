@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zecide Login</title>
+    <link rel="stylesheet" href="/src/styles/login.css" />
+     <link rel="icon" href="/src/images/logo.svg" />
+  </head>
+  <body class="login">
+    <div class="logo">
+      <img src="/src/images/logo.svg" alt="" />
+      <span>Zecide</span>
+    </div>
+    <img class="login-image" src="/src/images/login.svg" alt="" />
+    <img class="login-bg" src="/src/images/login-bg.svg" alt="" />
+    <div class="content">
+      <h1>Welcome Back!</h1>
+      <h2>It’s good to see you again.</h2>
+      <div>
+        <button class="log-btn">Log In</button>
+        <a href="/users"><button class="sign-btn">Sign Up</button></a>
+      </div>
+      <form action="/users/login" method="POST">
+        <input
+          class="form-input fname"
+          type="text"
+          id="UserName"
+          name="user[UserName]"
+          placeholder="Username"
+        />
+        <input
+          class="form-input"
+          type="password"
+          id="password"
+          name="user[password]"
+          placeholder="Password"
+        /><br />
+        <input class="submit-btn" type="submit" value="Log In" />
+      </form>
+         
+        <div class="google-login"> 
+          <img src="/src/images/google.svg" alt="">
+          <span>Log In with Google</span>
+        </div>
+      
+    </div>
+  </body>
+</html>

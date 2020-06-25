@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zecide - Z-Part</title>
+    <link rel="icon" href="/src/images/logo.svg">
+    <link rel="stylesheet" href="/src/styles/zpart.css">
+</head>
+<body>
+    <div class="upper-nav">
+        <div>
+        <div class="logo">
+            <img src="/src/images/logo.svg" alt="">
+            <span>Zecide</span>
+        </div>
+        <div class="upper-nav-1">
+        <div class="search">
+            <input placeholder="Search.." style="border: none;"/>
+            <img src="/src/images/search.svg"/>
+        </div>
+        <button class="download-btn">Download the App</button>
+    </div>
+        <div class="profile-dropdown">
+            <img src="/src/images/profile-img.jpg" alt="">
+            <span>Siddharth</span>
+            <img class="dropdown-btn" src="/src/images/dropdown-button.svg" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="side-nav">
+        <div>
+            <a href="/posts"><div class="nav-item">
+            <img src="/src/images/feed-active.svg" alt="">
+            <span>Feed</span>
+        </div>
+            </a>
+        <div class="nav-item">
+            <img src="/src/images/insights.svg" alt="">
+            <span>Insights</span>
+        </div>
+        <div class="nav-item nav-z-part nav-item-active">
+            <img src="/src/images/z-part.svg" alt="">
+            <span>Z-Part</span>
+        </div>
+        <div class="nav-item">
+            <img src="/src/images/tools.svg" alt="">
+            <span>Tools</span>
+        </div>
+        <div class="nav-item">
+            <img src="/src/images/profile.svg" alt="">
+            <span>Profile</span>
+        </div>
+        <div class="nav-item nav-help">
+            <img src="/src/images/help.svg" alt="">
+            <span>Help & Support</span>
+        </div>
+        <div class="nav-item">
+            <img src="/src/images/about.svg" alt="">
+            <span>About Us</span>
+        </div>
+    </div>
+    </div>
+    <div class="card-container">
+        <div class="q1">
+        <div class="question-card">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna fringilla urna porttitor rhoncus dolor purus non. Amet facilisis magna etiam tempor orci eu. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Turpis nunc eget lorem dolor sed. Tristique risus nec feugiat in fermentum posuere urna nec. Laoreet non curabitur gravida arcu. Duis at tellus at urna condimentum mattis pellentesque. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Risus nullam eget felis eget nunc lobortis mattis. Cursus sit amet dictum sit amet justo donec enim. Ac turpis egestas maecenas pharetra. Est pellentesque elit ullamcorper dignissim cras tincidunt. Tellus arci.</p>
+        </div>
+        <button class="zpart-btn" onclick="showQ2()">Proceed</button>
+    </div>
+    <div class="q2">
+        <div class="question-card">
+            <p>Q. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna fringilla urna porttitor rhoncus dolor purus non. Amet facilisis magna etiam tempor orci eu. Vitae elementum curab.</p>
+            <div class="q-options">
+                <button>(A) Option 1</button>
+                <button>(B) Option 2</button>
+                <button>(C) Option 3</button>
+                <button>(D) Option 4</button>
+            </div>
+        </div>
+        <button class="zpart-btn" onclick="showQ3()">Next</button>
+    </div>
+    <div class="q3">
+        <div class="question-card">
+            <p>Q. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna fringilla urna porttitor rhoncus dolor purus non. Amet facilisis magna etiam tempor orci eu. Vitae elementum curab.</p>
+            <div class="q-options">
+                <div class="result-container">
+                    <div class="result" style="width:56%">
+                       <p>(A) Option 1</p>
+                       
+                    </div>
+                    <p>56%</p>
+                </div>
+                <div class="result-container">
+                    <div class="result" style="width:10%">
+                        <p>(B) Option 2</p>
+                        
+                    </div>
+                    <p>10%</p>
+                </div>
+                <div class="result-container">
+                    <div class="result" style="width:24%">
+                        <p>(C) Option 3</p>
+                        
+                    </div>
+                    <p>24%</p>
+                </div>
+                <div class="result-container">
+                    <div class="result" style="width:10%">
+                        <p>(D) Option 4</p>
+                        
+                    </div>
+                    <p>10%</p>
+                </div>
+            </div></div>
+        <button class="zpart-btn" onclick="showQ4()">Finish</button>
+    </div>
+    <div class="q4">
+        <div class="question-card">
+            <p>Thank you for answering!</p>
+        </div>
+        <a href="/posts"><button class="zpart-btn">Go to Feed</button></a>
+    </div>
+    </div>
+    <div class="mascot">
+        <div>
+         <img class="q1-img" src="/src/images/question-1.svg" alt="">
+         <img class="q2-img" src="/src/images/question-2.svg" alt="">
+         <img class="q3-img" src="/src/images/question-3.svg" alt="">
+         <img class="q4-img" src="/src/images/question-4.svg" alt="">
+        </div>
+    </div>
+    </div>
+    <script src="/src/scripts/zpart.js"></script>
+</body>
+</html>
