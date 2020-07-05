@@ -10,7 +10,9 @@ const bodyParser = require('body-parser');
 const routes = require('./routes/api');
 
 const jwt = require('jsonwebtoken');
+const fetch = require("node-fetch");
 
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -20,16 +22,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //listen for requests
-app.listen(3000, function(){
+app.listen(PORT, function(){
     console.log("Server started at port 3000!");
 })
 
 var users = [
     {
-        username: 'john',
-        password: 'password123admin',
-        name: 'John',
-        email: 'john@gmail.com'
+        username: 'ankitanshu',
+        password: 'xyz123',
+        name: 'Ankitanshu',
+        email: 'ankitanshu22@gmail.com'
     }, {
         username: 'anna',
         password: 'password123member',

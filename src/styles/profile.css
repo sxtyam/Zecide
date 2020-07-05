@@ -226,30 +226,132 @@ margin-bottom: 20px;
     cursor: pointer;
 }
 
-.feed-card{
+.profile-card{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.07);
-border-radius: 12px;
-padding: 30px 50px;
-color: #aeaeae;
-height: 40vh;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 30px 50px;
+    color: #aeaeae;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.feed-card-top{
+.profile-main-top{
+    display: flex;
+    color: black;
+}
+
+.profile-main-top-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-main-top-left-1{
+    display: flex;
+}
+
+.profile-main-top-left-1 > div{
+    margin-left: 1.5vw;
+}
+
+.profile-main-profile-pic{
+    width: 5.5vw;
+    height: 5.5vw;
+}
+
+.z-scores{
+    width: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-main-top-left-1 h1{
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+.profile-main-top-left-1 span{
+    padding: 0;
+    margin: 0;
+}
+.profile-main-top-left-1 p{
+    padding: 0;
+    margin: 0 0 1.3vh 0;
+}
+
+.name-and-verified{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.name-and-verified img{
+    margin-left: 0.6vw;
+}
+
+.bio{
+    margin: 5vh 4vw 5vh 1vw;
+    text-align: center;
+}
+
+.followers, .following{
+    background-color: #3b98ff;
+    border-radius: 20px;
+    padding: 0.8vh 1.5vw;
+    margin-bottom: 1.2vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.followers>p, .following>p{
+    color: #ffffff;
+}
+
+.followers div, .following div{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 0vh 1vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1vw;
+}
+
+.follow, .more{
+    background-color: #ffffff;
+    border: solid 1px rgb(202, 202, 202);
+    border-radius: 20px;
+    padding: 0.6vh 1vw;
+    margin-bottom: 1.2vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.followers p, .following p, .follow p, .more p{
+    padding: 0;
+    margin: 0;
+}
+
+.profile-main-bottom{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+.profile-card-top{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2.5vh;
 }
 
-.feed-card-top-left{
+.profile-card-top-left{
     display: flex;
     align-items: start;
 }
 
-.feed-card-top-left-1{
+.profile-card-top-left-1{
     display: flex;
     flex-direction: column;
     margin: 0.1vh 0.5vw 0 1vw;
@@ -257,50 +359,60 @@ margin-bottom: 20px;
     
 }
 
-.feed-card-top-left-1 span{
+.profile-card-top-left-1 span{
     font-weight: 700;
     font-size: 1vw;
 }
 
-.feed-card-top-left-1 p{
+.profile-card-top-left-1 p{
     margin: 0;
     font-size: 1vw;
 }
 
-.feed-profile-pic{
+.profile-profile-pic{
     width: 3.2vw;
     height: 3.2vw;
 }
 
-.feed-profile-pic{
+.profile-profile-pic{
     width: 3.2vw;
     height: 3.2vw;
 }
 
-.feed-verified{
+.profile-verified{
     width: 1vw;
     height: 1vw;
     margin-top: 0.5vh;
 }
 
-.feed-card-top-right{
+.profile-card-top-right{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 8vw;
 }
 
-.feed-card-mid{
+.profile-card-mid{
     color: black;
     font-size: 1vw;
     margin-bottom: 4vh;
 }
 
-.feed-card-bottom{
+.profile-card-bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4vh;
+}
+
+.work, .location, .education{
+    display: flex;
+    align-items: center;
+}
+
+.work img, .location img, .education img{
+    margin-right: 1vw;
+    width: 1.7vw;
 }
 
 .upanddown{
@@ -332,7 +444,7 @@ margin-bottom: 20px;
     margin-right: 0.7vw;
 }
 
-.feed-card-comments{
+.profile-card-comments{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -340,11 +452,11 @@ margin-bottom: 20px;
 }
 
 
-.feed-card-comments img{
+.profile-card-comments img{
     width: 2vw;
 }
 
-.feed-card-comments input{
+.profile-card-comments input{
     width: 40vw;
     border: none;
     border-bottom: 1px solid #e4e4e4;
