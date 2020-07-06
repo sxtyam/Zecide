@@ -612,7 +612,8 @@ button:active {
 
   .logo-m span {
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 400;
+    font-family: 'Quicksand';
   }
 
   .burger {
@@ -770,22 +771,22 @@ button:active {
     grid-column: 1/2;
     grid-row: 3/5;
     z-index: 5;
-    filter: drop-shadow(-10px 0px 10px rgba(7, 38, 148, 0.2));
+    filter: drop-shadow(-10px 0px 10px rgba(7, 38, 148, 0));
   }
 
   .white-1 > img {
     width: 100vw;
-    box-shadow: 50vw 0px 40px rgba(7, 38, 148, 0.2);
+    box-shadow: 50vw 0px 40px rgba(7, 38, 148, 0);
   }
 
   .white-2 > img {
     width: 100vw;
-    box-shadow: -50vw 0px 40px rgba(7, 38, 148, 0.2);
+    box-shadow: -50vw 0px 40px rgba(7, 38, 148, 0);
   }
 
   .blue-1 img {
     width: 52.82vw;
-    filter: drop-shadow(10px 0px 10px rgba(7, 38, 148, 0.2));
+    filter: drop-shadow(10px 0px 10px rgba(7, 38, 148, 0));
   }
 
   .blue-2 img {
