@@ -597,6 +597,7 @@ button:active {
     display: block;
     text-align: left;
     border-bottom: 1px solid white;
+    font-family: 'Quicksand';
   }
 
   .dropdown-content a {
