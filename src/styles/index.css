@@ -214,7 +214,11 @@ button:active {
   grid-column: 9/18;
   grid-row: 5/8;
   z-index: 5;
-  filter: drop-shadow(-10px 0px 10px rgba(7, 38, 148, 0.2));
+  filter: drop-shadow(-10px 0px 10px rgba(7, 38, 148, 0));
+}
+
+.blue-2>img {
+  filter: drop-shadow(10px 0px 10px rgba(7, 38, 148, 0.2));
 }
 
 .white-1 > img {
