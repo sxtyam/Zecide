@@ -297,6 +297,10 @@ margin-bottom: 20px;
     text-align: center;
 }
 
+.profile-main-top-right{
+    font-size: 1vw;
+}
+
 .followers, .following{
     background-color: #3b98ff;
     border-radius: 20px;
@@ -474,6 +478,7 @@ margin-bottom: 20px;
     justify-content: space-between;
     margin-right: 2.5vw;
     height: 40vh;
+    visibility: hidden;
 }
 
 .trending-top{

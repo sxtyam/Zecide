@@ -362,6 +362,7 @@ margin-bottom: 20px;
     justify-content: space-between;
     margin-right: 2.5vw;
     height: 40vh;
+    visibility: hidden;
 }
 
 .trending-top{

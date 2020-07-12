@@ -29,25 +29,17 @@ router.get('/users',function(req,res){
     res.sendFile(path.join(__dirname, "../public/signup.html"))
 })
 
-
-
-
-//get the homepage
-router.get('/users/login',function(req,res){
-    res.sendFile(path.join(__dirname, "../login.html"))
+router.get('/Z/Feed',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/snippets.html"))
 })
 
-//get the homepage
-router.get('/',function(req,res){
-    res.sendFile(path.join(__dirname, "../index.html"))
+router.get('/Z/Snippet/Edit/:SnipId',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/snippets-edit.html"))
 })
 
-
-
-//post to homepage
-router.post('/',function(req,res){
-    res.send()
-});
+router.get('/Z/Snippet/delete/:SnipId',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/snippets-delete.html"))
+})
 
 //export
 module.exports = router;

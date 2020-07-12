@@ -1,6 +1,6 @@
 function fetchPostData(){
     var dataset;
-    fetch('http://159.89.165.229:8000/Posts/0')
+    fetch('http://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8000/Posts/0')
     .then(response => response.json())
     .then(data => useData(data)) 
 }
@@ -129,33 +129,40 @@ function useData(d){
             commentPost.setAttribute('src', '/src/images/send.svg');
         }
         else{        
-            profileProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
-            name.innerHTML=d[i].NewsSource;
-            var dateData = d[i].PublishedAt;
-            var date1 = Date.parse(dateData);
-            var date2 = Date.now();
-            var dateDiff = date2-date1;
-            postedOn.innerHTML= timeSince(dateDiff) + " ago";
-            profileVerified.setAttribute('src', '/src/images/verified.svg');
-            //zScoreImg.setAttribute('src', '/src/images/z-score.svg');
-            //zScore.innerHTML=d[i].Author.WeightNum.toPrecision(3);
-            //zHeatImg.setAttribute('src', '/src/images/z-heat.svg');
-            //zHeat.innerHTML=d[i].Author.Weightage.toPrecision(3);
-            profileCardMid.innerHTML=d[i].Content;
-            upvoteImg.setAttribute('src', '/src/images/upvote.svg');
-            upvoteCount.innerHTML=d[i].UpVote.length;
-            downvoteImg.setAttribute('src', '/src/images/downvote.svg');
-            downvoteCount.innerHTML=d[i].DownVote.length;
-            commentsImg.setAttribute('src', '/src/images/comments.svg');
-            commentsCount.innerHTML=d[i].comments.length + " comments";
-            userImg.setAttribute('src', '/src/images/profile-img.jpg');
-            commentInput.setAttribute('placeholder', 'Write a comment..');
-            commentPost.setAttribute('src', '/src/images/send.svg');
-            profileVerified.style.visibility="hidden";
-            zScore.style.visibility="hidden";
-            zScoreImg.style.visibility="hidden";
-            zHeat.style.visibility="hidden";
-            zHeatImg.style.visibility="hidden";
+            profileCard.style.display = "none";
+            // profileProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
+            // name.innerHTML=d[i].NewsSource;
+            // var dateData = d[i].PublishedAt;
+            // var date1 = Date.parse(dateData);
+            // var date2 = Date.now();
+            // var dateDiff = date2-date1;
+            // postedOn.innerHTML= timeSince(dateDiff) + " ago";
+            // profileVerified.setAttribute('src', '/src/images/verified.svg');
+
+
+
+            // //zScoreImg.setAttribute('src', '/src/images/z-score.svg');
+            // //zScore.innerHTML=d[i].Author.WeightNum.toPrecision(3);
+            // //zHeatImg.setAttribute('src', '/src/images/z-heat.svg');
+            // //zHeat.innerHTML=d[i].Author.Weightage.toPrecision(3);
+
+
+
+            // profileCardMid.innerHTML=d[i].Content;
+            // upvoteImg.setAttribute('src', '/src/images/upvote.svg');
+            // upvoteCount.innerHTML=d[i].UpVote.length;
+            // downvoteImg.setAttribute('src', '/src/images/downvote.svg');
+            // downvoteCount.innerHTML=d[i].DownVote.length;
+            // commentsImg.setAttribute('src', '/src/images/comments.svg');
+            // commentsCount.innerHTML=d[i].comments.length + " comments";
+            // userImg.setAttribute('src', '/src/images/profile-img.jpg');
+            // commentInput.setAttribute('placeholder', 'Write a comment..');
+            // commentPost.setAttribute('src', '/src/images/send.svg');
+            // profileVerified.style.visibility="hidden";
+            // zScore.style.visibility="hidden";
+            // zScoreImg.style.visibility="hidden";
+            // zHeat.style.visibility="hidden";
+            // zHeatImg.style.visibility="hidden";
         }
   
 

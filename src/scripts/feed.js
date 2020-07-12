@@ -1,8 +1,8 @@
 function fetchPostData(){
     var dataset;
-    fetch('http://159.89.165.229:8000/Posts/0')
+    fetch('http://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8000/Posts/0')
     .then(response => response.json())
-    .then(data => useData(data)) 
+    .then(data => useData(data))
 }
 fetchPostData();
 var data;
@@ -14,21 +14,21 @@ function useData(d){
     data= d;
     len= data.length;
     for(var i=0; i<len; i++){
-        var profileCard = document.createElement('div');
-        var profileCardTop = document.createElement('div');
-        var profileCardTopLeft = document.createElement('div');
-        var profileProfilePic = document.createElement('img');
-        var profileCardTopLeft1 = document.createElement('div');
+        var feedCard = document.createElement('div');
+        var feedCardTop = document.createElement('div');
+        var feedCardTopLeft = document.createElement('div');
+        var feedProfilePic = document.createElement('img');
+        var feedCardTopLeft1 = document.createElement('div');
         var name = document.createElement('span');
         var postedOn = document.createElement('p');
-        var profileVerified = document.createElement('img');
-        var profileCardTopRight = document.createElement('div');
+        var feedVerified = document.createElement('img');
+        var feedCardTopRight = document.createElement('div');
         var zScoreImg = document.createElement('img');
         var zScore = document.createElement('span');
         var zHeatImg = document.createElement('img');
         var zHeat = document.createElement('span');
-        var profileCardMid = document.createElement('div');
-        var profileCardBottom = document.createElement('div');
+        var feedCardMid = document.createElement('div');
+        var feedCardBottom = document.createElement('div');
         var upAndDown = document.createElement('div');
         var upvote = document.createElement('div');
         var upvoteImg = document.createElement('img');
@@ -39,29 +39,29 @@ function useData(d){
         var comments = document.createElement('div');
         var commentsImg = document.createElement('img');
         var commentsCount = document.createElement('span');
-        var profileCardComments = document.createElement('div');
+        var feedCardComments = document.createElement('div');
         var userImg = document.createElement('img');
         var commentInput = document.createElement('input');
         var commentPost = document.createElement('img');
 
-        cardContainer.append(profileCard);
-        profileCard.append(profileCardTop);
-        profileCard.append(profileCardMid);
-        profileCard.append(profileCardBottom);
-        profileCard.append(profileCardComments);
-        profileCardTop.append(profileCardTopLeft);
-        profileCardTop.append(profileCardTopRight);
-        profileCardTopLeft.append(profileProfilePic);
-        profileCardTopLeft.append(profileCardTopLeft1);
-        profileCardTopLeft.append(profileVerified);
-        profileCardTopLeft1.append(name);
-        profileCardTopLeft1.append(postedOn);
-        profileCardTopRight.append(zScoreImg);
-        profileCardTopRight.append(zScore);
-        profileCardTopRight.append(zHeatImg);
-        profileCardTopRight.append(zHeat);
-        profileCardBottom.append(upAndDown);
-        profileCardBottom.append(comments);
+        cardContainer.append(feedCard);
+        feedCard.append(feedCardTop);
+        feedCard.append(feedCardMid);
+        feedCard.append(feedCardBottom);
+        feedCard.append(feedCardComments);
+        feedCardTop.append(feedCardTopLeft);
+        feedCardTop.append(feedCardTopRight);
+        feedCardTopLeft.append(feedProfilePic);
+        feedCardTopLeft.append(feedCardTopLeft1);
+        feedCardTopLeft.append(feedVerified);
+        feedCardTopLeft1.append(name);
+        feedCardTopLeft1.append(postedOn);
+        feedCardTopRight.append(zScoreImg);
+        feedCardTopRight.append(zScore);
+        feedCardTopRight.append(zHeatImg);
+        feedCardTopRight.append(zHeat);
+        feedCardBottom.append(upAndDown);
+        feedCardBottom.append(comments);
         upAndDown.append(upvote);
         upAndDown.append(downvote);
         upvote.append(upvoteImg);
@@ -70,25 +70,25 @@ function useData(d){
         downvote.append(downvoteCount);
         comments.append(commentsImg);
         comments.append(commentsCount);
-        profileCardComments.append(userImg);
-        profileCardComments.append(commentInput);
-        profileCardComments.append(commentPost);
+        feedCardComments.append(userImg);
+        feedCardComments.append(commentInput);
+        feedCardComments.append(commentPost);
 
-        profileCard.className = 'profile-card';
-        profileCardTop.className = 'profile-card-top';
-        profileCardTopLeft.className = 'profile-card-top-left';
-        profileProfilePic.className = 'profile-profile-pic';
-        profileCardTopLeft1.className = 'profile-card-top-left-1';
+        feedCard.className = 'feed-card';
+        feedCardTop.className = 'feed-card-top';
+        feedCardTopLeft.className = 'feed-card-top-left';
+        feedProfilePic.className = 'feed-profile-pic';
+        feedCardTopLeft1.className = 'feed-card-top-left-1';
         name.className = 'name';
         postedOn.className = 'posted-on';
-        profileVerified.className = 'profile-verified';
-        profileCardTopRight.className = 'profile-card-top-right';
+        feedVerified.className = 'feed-verified';
+        feedCardTopRight.className = 'feed-card-top-right';
         zScoreImg.className = 'z-score-img';
         zScore.className = 'z-score';
         zHeatImg.className = 'z-heat-img';
         zHeat.className = 'z-heat';
-        profileCardMid.className = 'profile-card-mid';
-        profileCardBottom.className = 'profile-card-bottom';
+        feedCardMid.className = 'feed-card-mid';
+        feedCardBottom.className = 'feed-card-bottom';
         upAndDown.className = 'upanddown';
         upvote.className = 'upvote';
         upvoteImg.className = 'upvote-img';
@@ -99,59 +99,59 @@ function useData(d){
         comments.className = 'comments';
         commentsImg.className = 'comments-img';
         commentsCount.className = 'comments-count';
-        profileCardComments.className = 'profile-card-comments';
+        feedCardComments.className = 'feed-card-comments';
         userImg.className = 'user-img';
         commentInput.className = 'comment-input';
         commentPost.className = 'comment-post';
 
         if (d[i].Content===undefined){     
-            profileProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
+            feedProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
             name.innerHTML=d[i].Author.Name;
             var dateData = d[i].date;
             var date1 = Date.parse(dateData);
             var date2 = Date.now();
             var dateDiff = date2-date1;
             postedOn.innerHTML= timeSince(dateDiff) + " ago";
-            profileVerified.setAttribute('src', '/src/images/verified.svg');
+            feedVerified.setAttribute('src', '/src/images/verified.svg');
             zScoreImg.setAttribute('src', '/src/images/z-score.svg');
             zScore.innerHTML=d[i].Author.WeightNum.toPrecision(3);
             zHeatImg.setAttribute('src', '/src/images/z-heat.svg');
             zHeat.innerHTML=d[i].Author.Weightage.toPrecision(3);
-            profileCardMid.innerHTML=d[i].Post;
+            feedCardMid.innerHTML=d[i].Post;
             upvoteImg.setAttribute('src', '/src/images/upvote.svg');
             upvoteCount.innerHTML=d[i].UpVote.length;
             downvoteImg.setAttribute('src', '/src/images/downvote.svg');
             downvoteCount.innerHTML=d[i].DownVote.length;
             commentsImg.setAttribute('src', '/src/images/comments.svg');
             commentsCount.innerHTML=d[i].comments.length + " comments";
-            userImg.setAttribute('src', '/src/images/profile-img.jpg');
+            userImg.setAttribute('src', '/src/images/feed-img.jpg');
             commentInput.setAttribute('placeholder', 'Write a comment..');
             commentPost.setAttribute('src', '/src/images/send.svg');
         }
         else{        
-            profileProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
+            feedProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
             name.innerHTML=d[i].NewsSource;
             var dateData = d[i].PublishedAt;
             var date1 = Date.parse(dateData);
             var date2 = Date.now();
             var dateDiff = date2-date1;
             postedOn.innerHTML= timeSince(dateDiff) + " ago";
-            profileVerified.setAttribute('src', '/src/images/verified.svg');
+            feedVerified.setAttribute('src', '/src/images/verified.svg');
             //zScoreImg.setAttribute('src', '/src/images/z-score.svg');
             //zScore.innerHTML=d[i].Author.WeightNum.toPrecision(3);
             //zHeatImg.setAttribute('src', '/src/images/z-heat.svg');
             //zHeat.innerHTML=d[i].Author.Weightage.toPrecision(3);
-            profileCardMid.innerHTML=d[i].Content;
+            feedCardMid.innerHTML=d[i].Content;
             upvoteImg.setAttribute('src', '/src/images/upvote.svg');
             upvoteCount.innerHTML=d[i].UpVote.length;
             downvoteImg.setAttribute('src', '/src/images/downvote.svg');
             downvoteCount.innerHTML=d[i].DownVote.length;
             commentsImg.setAttribute('src', '/src/images/comments.svg');
             commentsCount.innerHTML=d[i].comments.length + " comments";
-            userImg.setAttribute('src', '/src/images/profile-img.jpg');
+            userImg.setAttribute('src', '/src/images/feed-img.jpg');
             commentInput.setAttribute('placeholder', 'Write a comment..');
             commentPost.setAttribute('src', '/src/images/send.svg');
-            profileVerified.style.visibility="hidden";
+            feedVerified.style.visibility="hidden";
             zScore.style.visibility="hidden";
             zScoreImg.style.visibility="hidden";
             zHeat.style.visibility="hidden";
