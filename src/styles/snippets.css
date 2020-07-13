@@ -156,6 +156,10 @@ body {
     padding: 1vh 3vw;
   }
   
+  button, a{
+    outline: none;
+  }
+
   .snippet-container h2{
     font-weight: 400;
   }
