@@ -201,3 +201,15 @@ function timeSince(date) {
 //   var aDay = 24*60*60*1000;
 //   return(timeSince(new Date(Date.now()-aDay)));
 //   (timeSince(new Date(Date.now()-aDay*2)));
+
+
+// var sideNav = document.querySelector('.side-nav');
+// window.onscroll = function () { 
+//     "use strict";
+//     if (document.body.scrollTop >= 20 && document.documentElement.clientWidth<600) {
+//       sideNav.style.paddingTop= '88.9vh';
+//     } 
+//     else {
+//       sideNav.style.paddingTop= '88.9vh';
+//     }
+// };
