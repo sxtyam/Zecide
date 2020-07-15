@@ -12,22 +12,39 @@
     <!-- Preloader -->
     <div class="preloader">
       <svg class="pl-svg" width="200" height="200" viewBox="0 0 100 100">
-        <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
-        <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
-        <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
-        <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+        <polyline
+          class="line-cornered stroke-still"
+          points="0,0 100,0 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+        <polyline
+          class="line-cornered stroke-still"
+          points="0,0 0,100 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+        <polyline
+          class="line-cornered stroke-animation"
+          points="0,0 100,0 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+        <polyline
+          class="line-cornered stroke-animation"
+          points="0,0 0,100 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
       </svg>
     </div>
     <!-- Preloader -->
-
 
     <div class="pg-wrapper">
       <div id="container" class="pg-container">
         <div class="navbar-m">
           <div class="logo-m">
-            <a href="#"
-              ><img class="alogo" src="/src/images/logo.svg" alt="zecide-logo"
-            /></a>
+            <img class="alogo" src="/src/images/logo.svg" alt="zecide-logo" />
             <span>Zecide</span>
           </div>
           <div class="dropdown">
@@ -40,9 +57,10 @@
               />
             </button>
             <div class="dropdown-content">
-              <a href=""> <span>Home</span> </a>
-              <a href=""><span>About</span></a>
-              <a href=""><span>Contact</span></a>
+              <a href="/"> <span>Home</span> </a>
+              <a href="#page-2"><span>Features</span></a>
+              <a href="#page-3"><span>About</span></a>
+              <a href="#footer"><span>Contact</span></a>
               <a href=""><span>Download the App</span></a>
               <a href="/users/login"><span>Login</span></a>
             </div>
@@ -50,10 +68,12 @@
         </div>
         <div data-anchor="page-1" id="page-1" class="pg-page pg-active top">
           <div class="navbar">
-            <div class="logo">
-              <img src="/src/images/logo.svg" alt="" />
-              <span>Zecide</span>
-            </div>
+            <a href="/">
+              <div class="logo">
+                <img src="/src/images/logo.svg" alt="" />
+                <span>Zecide</span>
+              </div>
+            </a>
             <div class="nav-links">
               <a href="#page-2"><span>Features</span></a>
               <a href="#page-3"><span>About</span></a>
@@ -221,27 +241,39 @@
             <img class="d-links" src="/src/images/Apple App Store.svg" alt="" />
           </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
           <div class="address">
             <h3>Office:</h3>
             <p>
-              LGF, 416, Sector 45 <br/>
-              Gurgaon, Haryana <br/> 
-              Ph: 9003711038 
-            </p>   
+              LGF, 416, Sector 45 <br />
+              Gurgaon, Haryana <br />
+              Ph: 9003711038
+            </p>
           </div>
           <div class="waitlist">
-            <p>Want us to contact you? Drop your mail here: </p>
+            <p>Want us to contact you? Drop your mail here:</p>
             <form action="">
-              <input class="waitlist-mail" type="text" name="" placeholder="Enter your E-mail Address.." id="">
-              <input class="waitlist-button" type="button" value="→">
+              <input
+                class="waitlist-mail"
+                type="text"
+                name=""
+                placeholder="Enter your E-mail Address.."
+                id=""
+              />
+              <input class="waitlist-button" type="button" value="→" />
             </form>
           </div>
           <div class="social-links">
-            <p>Follow us on: </p>
-            <a href=""><img src="/src/images/facebook-footer.svg" alt="face" srcset=""></a> 
-            <a href=""><img src="/src/images/instagram-footer.svg" alt="" srcset=""></a>
-            <a href=""><img src="/src/images/twitter-footer.svg" alt="" srcset=""></a> 
+            <p>Follow us on:</p>
+            <a href=""
+              ><img src="/src/images/facebook-footer.svg" alt="face" srcset=""
+            /></a>
+            <a href=""
+              ><img src="/src/images/instagram-footer.svg" alt="" srcset=""
+            /></a>
+            <a href=""
+              ><img src="/src/images/twitter-footer.svg" alt="" srcset=""
+            /></a>
           </div>
         </div>
       </div>
