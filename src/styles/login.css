@@ -33,13 +33,24 @@ body {
   grid-template-rows: repeat(14, 1fr);
 }
 
-.login .logo {
+.login .logo{
   grid-column: 2/4;
   grid-row: 1/3;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 5vw;
+}
+
+.logo a{
+  grid-column: 2/4;
+  grid-row: 1/3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5vw;
+  text-decoration: none;
+  color: #000000;
 }
 
 .logo img{
