@@ -3,6 +3,11 @@ const express = require("express");
 //set up express app
 const app = express();
 
+//redirect http to https
+const secure = require("ssl-express-www");
+ 
+app.use(secure);
+
 require('dotenv').config()
 const bodyParser = require('body-parser');
 
