@@ -21,33 +21,26 @@
         <a href="/users/login"><button class="log-btn">Log In</button></a>
         <button class="sign-btn">Sign Up</button>
       </div>
-      <form action="/users" method="POST">
+      <form id="signUpForm">
         <input
-          class="form-input fname"
-          type="text"
-          id="Name"
-          name="user[Name]"
-          placeholder="Name"
-        />
-        <input
-          class="form-input lname"
+          class="form-input"
           type="email"
           id="Email"
-          name="user[Email]"
+          name="Email"
           placeholder="Email Address"
         /><br />
         <input
           class="form-input"
           type="text"
           id="UserName"
-          name="user[UserName]"
+          name="UserName"
           placeholder="Username"
         />
         <input
           class="form-input"
           type="password"
           id="password"
-          name="user[password]"
+          name="password"
           placeholder="Password"
         /><br />
         <input class="submit-btn" type="submit" value="Sign Up" />
@@ -59,6 +52,6 @@
         </div>
       
     </div>
-    
+    <script src="/src/scripts/signup.js"></script>
   </body>
 </html>

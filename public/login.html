@@ -21,9 +21,9 @@
         <button class="log-btn">Log In</button>
         <a href="/users"><button class="sign-btn">Sign Up</button></a>
       </div>
-      <form action="/users/login" method="POST">
+      <form action="http://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8000/Users/login" method="POST" id="logInForm" target="result">
         <input
-          class="form-input fname"
+          class="form-input"
           type="text"
           id="UserName"
           name="user[UserName]"
@@ -35,7 +35,7 @@
           id="password"
           name="user[password]"
           placeholder="Password"
-        /><br />
+        /><br/>
         <input class="submit-btn" type="submit" value="Log In" />
       </form>
          
@@ -45,5 +45,6 @@
         </div>
       
     </div>
+    <script src="/src/scripts/login.js"></script>
   </body>
 </html>

@@ -213,3 +213,14 @@ function timeSince(date) {
 //       sideNav.style.paddingTop= '88.9vh';
 //     }
 // };
+
+const navToggle = () => {
+  var e = document.getElementById("burger"),
+    t = document.querySelector(".dropdown-content"),
+    n = "/src/images/dropdown-button.svg";
+  e.addEventListener("click", () => {
+    t.classList.toggle("dropdown-content-active");
+    e.src === n ? (e.src = "/src/images/dropdown-button.svg") : (e.src = n);
+  });
+};
+navToggle();
