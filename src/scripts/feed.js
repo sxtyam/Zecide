@@ -4,7 +4,7 @@ myHeaders.append('authorization', getCookie('token'));
 
 function fetchPostData(){
     var dataset;
-    fetch('http://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8000/Posts/0',{
+    fetch('https://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8010/Posts/0',{
       method: 'get',
       headers: myHeaders,
   })

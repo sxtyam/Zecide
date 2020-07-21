@@ -31,16 +31,16 @@ form.addEventListener('submit', function(e){
     var infoObject = { "UserName": username, "Email": email, "password": password };
     var info = JSON.stringify(infoObject);
     formData.append("user",info);
-    fetch('http://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8000/Users/', {
+    fetch('https://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8010/Users', {
         method: 'post',
         body: formData
     }).then(function(response){
         stat = response.status;
         return response.json();
     }).then(function(text){
-        // console.log(text.user.UserName);
-        // console.log(text.user._id);
-        // console.log(text.user.token);
+        console.log(text.user.UserName);
+        console.log(text.user._id);
+        console.log(text.user.token);
         setCookie("UserName", text.user.UserName);
         setCookie("UserID", text.user._id);
         setCookie("token", text.user.token);
