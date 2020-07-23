@@ -188,3 +188,18 @@ body::-webkit-scrollbar-thumb
     p{
         margin: 20px 10px 35px 10px;
     }
+
+    .content{
+      width: 80%;
+      margin: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      .logo{
+        display: none;
+      }
+      .content{
+        width: 90%;
+        margin: auto;
+      }
+    }
