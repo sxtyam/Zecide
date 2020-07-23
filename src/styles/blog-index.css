@@ -14,6 +14,10 @@
     animation: fadein 0.5s;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-image: url(../images/top-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
   }
   
   html {
@@ -43,7 +47,8 @@ body::-webkit-scrollbar-track
 body::-webkit-scrollbar
 {
 	width: 7px;
-	background-color: #f5f5f549;
+  background-color: #f5f5f549;
+  z-index: 999;
 }
 
 body::-webkit-scrollbar-thumb
@@ -151,7 +156,88 @@ body::-webkit-scrollbar-thumb
  
 
   .fa-bars{
-      background-color: #39c0ff00 !important;
+      background-color: #39c0ff !important;
+  }
+
+  .navbar-m {
+    display: none;
+  }
+
+  .navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 99%;
+    padding: 4vh 4% 4vh 4%;
+    z-index: 1000;
+    background-color: #ffffff;
+  }
+
+  .nav-links span{
+    font-size: 1.2vw;
+  }
+
+  .nav-links button{
+    font-size: 1.2vw;
+    padding: 0.5vh 2vw;
+    border: none;
+    border-radius: 50px;
+    background-color: #3b98ff;
+    color: #ffffff;
+  }
+
+  .navbar a{
+    text-decoration: none;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12vw;
+    font-weight: 400;
+    font-size: 1.5vw;
+  }
+  
+  .logo > span {
+    margin-left: 1vw;
+  }
+  
+  .logo > img {
+    width: 2vw;
+  }
+  
+  .nav-links {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-container{
+    margin-top: 16vh !important;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .nav-links > span,
+  .nav-links > button {
+    font-size: 1.1vw;
+  }
+  .nav-links > button {
+    color: #ffffff;
+  }
+  
+  .download-links {
+    display: flex;
+  }
+  
+  button:active {
+    background-color: #273e55 !important;
+    transform: translateY(4px);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -183,6 +269,7 @@ body::-webkit-scrollbar-thumb
     margin: 0 15px 30px 15px !important;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.068), 0 2px 10px 0 rgba(0, 0, 0, 0.068) !important;
     border-radius: 20px;
+    background-color: #ffffff;
     }
 
     p{
