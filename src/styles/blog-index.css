@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  body {
+    animation: fadein 0.5s;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+  }
+  
+
+
+
+body::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #f5f5f549;
+}
+
+body::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #f5f5f549;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #3b98ff;
+}
+
+
+/* Preloader */
+
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .pl-svg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(1);
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  
+  .stroke-still {
+    stroke: #e0e0e0;
+  }
+  
+  .stroke-animation {
+    -webkit-animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+            animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  
+  @-webkit-keyframes stroke-spacing {
+    0% {
+      stroke-dasharray: 0 200;
+    }
+    45% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 200 200;
+    }
+    90% {
+      stroke-dashoffset: -200;
+      stroke-dasharray: 200 200;
+    }
+    100% {
+      stroke-dashoffset: -200;
+      stroke-dasharray: 200 200;
+    }
+  }
+  
+  @keyframes stroke-spacing {
+    0% {
+      stroke-dasharray: 0 200;
+    }
+    45% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 200 200;
+    }
+    90% {
+      stroke-dashoffset: -200;
+      stroke-dasharray: 200 200;
+    }
+    100% {
+      stroke-dashoffset: -200;
+      stroke-dasharray: 200 200;
+    }
+  }
+  
+  @-webkit-keyframes stroke-color {
+    0%  { stroke: #3b98ff; }
+    99% { stroke: #3b98ff; }
+  }
+  
+  @keyframes stroke-color {
+    0%  { stroke: #3b98ff; }
+    99% { stroke: #3b98ff; }
+  }
+  
+  
+  /* Preloader */
+
+
+  #myHeader{
+      background-image: url(../images/blog-index-bg.jpg);
+      background-position: center;
+      background-size: cover;
+    /* background: linear-gradient(to right, #39c0ff 0%, #3b98ff 80%) !important; */
+    padding-bottom: 5vh !important;
+    margin-bottom: 3.5vh !important;
+  }
+
+ 
+
+  .fa-bars{
+      background-color: #39c0ff00 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Quicksand';
+      font-weight: 400;
+      margin: 0;
+  }
+
+  .post-card-img{
+    max-width:90% !important;
+    max-height:100% !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  p{
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+  }
+
+  .post-title{
+      font-size: 36px;
+      font-weight: 400;
+      color: #3b98ff;
+  }
+
+  .w3-card{
+    margin: 0 15px 30px 15px !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.068), 0 2px 10px 0 rgba(0, 0, 0, 0.068) !important;
+    border-radius: 20px;
+    }
+
+    p{
+        margin: 20px 10px 35px 10px;
+    }

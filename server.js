@@ -19,6 +19,17 @@ const fetch = require("node-fetch");
 
 const PORT = process.env.PORT || 3000;
 
+
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+var path = require('path');
+var indexRouter = require('./routes/api');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.use(logger('dev'));
+app.use(cookieParser());
+app.use('/', indexRouter);
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(routes);
