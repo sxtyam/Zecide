@@ -163,7 +163,7 @@ body::-webkit-scrollbar-thumb
   .blog-post-img{
     max-width:60% !important;
     max-height:40vh !important;
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 50px;
   }
 
@@ -192,6 +192,7 @@ body::-webkit-scrollbar-thumb
     .content{
       width: 80%;
       margin: auto;
+      margin-bottom: 40px;
     }
 
     @media screen and (max-width: 600px) {
@@ -201,5 +202,6 @@ body::-webkit-scrollbar-thumb
       .content{
         width: 90%;
         margin: auto;
+        margin-bottom: 40px;
       }
     }
