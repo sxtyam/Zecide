@@ -737,7 +737,7 @@ body::-webkit-scrollbar-thumb
     position: fixed;
     width: 94vw;
     z-index: 999;
-    padding: 2vh 0vw;
+    padding: 2vh 6vw;
   }
 
   .navbar-m a {
