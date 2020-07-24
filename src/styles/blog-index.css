@@ -169,8 +169,9 @@ body::-webkit-scrollbar-thumb
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 99%;
+    width: 74.5%;
     padding: 4vh 4% 4vh 4%;
+    margin-left: 12.5%;
     z-index: 1000;
     background-color: #ffffff;
   }
@@ -180,7 +181,7 @@ body::-webkit-scrollbar-thumb
   }
 
   .nav-links button{
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     padding: 0.5vh 2vw;
     border: none;
     border-radius: 50px;
@@ -247,10 +248,11 @@ body::-webkit-scrollbar-thumb
   }
 
   .post-card-img{
-    max-width:90% !important;
+    max-width:100% !important;
     max-height:100% !important;
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 30px;
+    border-radius: 20px;
   }
 
   p{
@@ -259,8 +261,12 @@ body::-webkit-scrollbar-thumb
       font-size: 20px;
   }
 
+  .w3-card span{
+    font-style: italic;
+  }
+
   .post-title{
-      font-size: 36px;
+      font-size: 28px;
       font-weight: 400;
       color: #3b98ff;
   }
@@ -270,14 +276,173 @@ body::-webkit-scrollbar-thumb
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.068), 0 2px 10px 0 rgba(0, 0, 0, 0.068) !important;
     border-radius: 20px;
     background-color: #ffffff;
+    padding: 0 !important;
     }
 
     p{
-        margin: 20px 10px 35px 10px;
+        margin: 20px 8px 35px 8px;
+        font-size: 1vw !important;
     }
 
     @media screen and (max-width: 600px) {
-      .logo{
-        display: none;
+
+      body {
+        animation: fadein 0.5s;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        background-image: url(../images/top-bg.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: auto;
+      }
+
+      #myHeader{
+        background-image: url(../images/blog-index-bg.jpg);
+        background-position: center;
+        background-size: cover;
+      /* background: linear-gradient(to right, #39c0ff 0%, #3b98ff 80%) !important; */
+      padding-bottom: 5vh !important;
+      margin-bottom: 3.5vh !important;
+    }
+  
+    nav a, nav button{
+      font-size: 24px;
+      color: #2385f5 !important;
+    }
+  
+    .fa-bars{
+        background-color: #ffffff !important;
+    }
+  
+    .navbar-m {
+      display: flex;
+      justify-content: space-between;
+      padding: 2vh 11vw 2vh 8vw;
+      position: fixed;
+      width: 98%;
+      background-color: #ffffff;
+    }
+  
+    .navbar {
+      
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 99%;
+      padding: 4vh 4% 4vh 4%;
+      z-index: 1000;
+      background-color: #ffffff;
+    }
+  
+    .nav-links span{
+      font-size: 1.2vw;
+    }
+  
+    .nav-links button{
+      font-size: 1.2vw;
+      padding: 0.5vh 2vw;
+      border: none;
+      border-radius: 50px;
+      background-color: #ffffff;
+      color: #ffffff;
+    }
+
+    i{
+      border-radius: 10px !important;
+    }
+  
+    .navbar a{
+      text-decoration: none;
+    }
+    
+    .logo-m {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 42vw;
+      font-weight: 400;
+      font-size: 5vw;
+    }
+    
+    .logo > span {
+      margin-left: 1vw;
+    }
+    
+    .logo > img {
+      width: 2vw;
+    }
+    
+    .nav-links {
+      display: flex;
+      width: 30vw;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .card-container{
+      margin-top: 12vh !important;
+      width: 85%;
+      text-align: center;
+      margin: auto;
+    }
+    
+    .nav-links > span,
+    .nav-links > button {
+      font-size: 1.1vw;
+    }
+    .nav-links > button {
+      color: #ffffff;
+    }
+    
+    .download-links {
+      display: flex;
+    }
+    
+    button:active {
+      background-color: #273e55 !important;
+      transform: translateY(4px);
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Quicksand';
+        font-weight: 400;
+        margin: 0;
+    }
+  
+    .post-card-img{
+      max-width:100% !important;
+      max-height:100% !important;
+      padding-top: 0px;
+      padding-bottom: 30px;
+      border-radius: 14px;
+    }
+
+    .w3-card span{
+      font-style: italic;
+    }
+  
+    p{
+        margin: 0;
+        padding: 0;
+    }
+  
+    .post-title{
+        font-size: 24px;
+        font-weight: 400;
+        color: #3b98ff;
+    }
+  
+    .w3-card{
+      margin: 0 15px 30px 15px !important;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.068), 0 2px 10px 0 rgba(0, 0, 0, 0.068) !important;
+      border-radius: 20px;
+      background-color: #ffffff;
+      padding: 0 !important;
+      }
+  
+      p{
+          margin: 20px 8px 35px 8px;
+          font-size: 16px !important;
       }
     }

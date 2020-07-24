@@ -49,9 +49,8 @@
   <nav class="w3-sidebar w3-bar-block w3-animate-left w3-center" style="display:none" id="mySidebar">
     <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
     <a href="/" class="w3-bar-item w3-button">Home</a>
-    <a href="/#page-2" class="w3-bar-item w3-button">Features</a>
-    <a href="/#page-3" class="w3-bar-item w3-button">About</a>
-    <a href="/Users" class="w3-bar-item w3-button">Login</a>
+    <a href="/Posts/0" class="w3-bar-item w3-button">Feed</a>
+    <a href="#" class="w3-bar-item w3-button">Download the App</a>
   </nav>
   
   <!-- Header -->
@@ -69,19 +68,10 @@
   <div class="navbar-m">
     <div class="logo-m">
       <img class="alogo" src="/src/images/logo.svg" alt="zecide-logo" />
-      <span>Zecide</span>
+      <span>Zecide Blogs</span>
     </div>
     <div class="dropdown">
-      <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
-      <div class="dropdown-content">
-        <a href="/"> <span>Home</span> </a>
-        <a href="#page-2"><span>Features</span></a>
-        <a href="#page-3"><span>About</span></a>
-        <a href="/blog"><span>Blogs</span></a>
-        <a href="#footer"><span>Contact</span></a>
-        <a href=""><span>Download the App</span></a>
-        <a href="/users/login"><span>Login</span></a>
-      </div>
+      <img onclick="w3_open()" src="../src/images/burger.svg" class="fa fa-bars w3-xlarge w3-button w3-theme"> 
     </div>
   </div>
   
@@ -108,6 +98,7 @@
     <div class="w3-card w3-container" style="min-height:460px">
     <img class="post-card-img" src="<%= post.metadata.image.url%>" alt="">
     <h3 class="post-title"><%= post.title %></h3><br>
+    <span>by <%= post.metadata.author %> </span><br>
     <span><%= post.metadata.date %> </span>
     <p><%= post.metadata.description %> </p>
     </div>
