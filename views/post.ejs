@@ -46,6 +46,7 @@
 
   <nav class="w3-sidebar w3-bar-block w3-animate-left w3-center" style="display:none" id="mySidebar">
     <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+    <a href="/blog" class="w3-bar-item w3-button">Blogs</a>
     <a href="/" class="w3-bar-item w3-button">Home</a>
     <a href="/Posts/0" class="w3-bar-item w3-button">Feed</a>
     <a href="#" class="w3-bar-item w3-button">Download the App</a>
@@ -53,8 +54,10 @@
 
   <div class="navbar-m">
     <div class="logo-m">
+      <a href="/blog">
       <img class="alogo" src="/src/images/logo.svg" alt="zecide-logo" />
       <span>Zecide Blogs</span>
+    </a>
     </div>
     <div class="dropdown">
       <img onclick="w3_open()" src="../src/images/burger.svg" class="fa fa-bars w3-xlarge w3-button w3-theme"> 
@@ -69,8 +72,9 @@
         </div>
       </a>
       <div class="nav-links">
-        <a href="#page-2"><span>Home</span></a>
-        <a href="#page-3"><span>Feed</span></a>
+        <a href="/"><span>Home</span></a>
+        <a href="/posts/0"><span>Feed</span></a>
+        <a href="/blog"><span>Blogs</span></a>
         <a href="/users/login"><button>Download the App</button></a>
       </div>
     </div>
