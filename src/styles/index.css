@@ -868,20 +868,22 @@ body::-webkit-scrollbar-thumb
     margin-top: 50px;
     display: block;
     position: fixed;
-    background-color: #2c86c7;
-    min-width: 240px;
+    background-color: #3190d4;
+    min-width: 235px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 100;
+    border-radius: 10px;
   }
   .dropdown-content span {
     float: none;
     color: #ffffff;
-    padding: 24px 16px;
+    padding: 24px 65px 24px 0px;
     text-decoration: none;
     display: block;
-    text-align: left;
-    border-bottom: 1px solid white;
+    text-align: right;
+    border-bottom: 1px solid #a9d1ff54;
     font-family: 'Quicksand';
+    font-size: 4.2vw;
   }
 
   .dropdown-content a {
@@ -1395,7 +1397,7 @@ body::-webkit-scrollbar-thumb
   .d-links{
     margin-right: 0;
     width: 35vw;
-    border-radius: 14px;
+    border-radius: 10px;
     margin-bottom: 7vh;
   }
 
