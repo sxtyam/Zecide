@@ -53,9 +53,14 @@ body {
   color: #000000;
 }
 
+.back{
+  width: 1.7vw;
+  margin-right: 1vw;
+}
+
 .logo img{
   height: 5vh;
-  margin-right: 0;
+
 }
 
 .logo span{
@@ -261,10 +266,17 @@ body {
   grid-column: 1/8;
   grid-row: 1/2;
   display: flex;
-  margin: auto;
+  margin: auto 0;
   align-items: center;
   justify-content: space-between;
   width: 15vw;
+}
+
+
+.back{
+  width: 6vw;
+  margin-left: 5vw;
+  margin-right: 29vw !important;
 }
 
 .logo span{
@@ -273,7 +285,7 @@ body {
 }
 
 .logo img{
-  height: 3vh;
+  height: 5vw;
   margin-right: 2vw;
 }
 

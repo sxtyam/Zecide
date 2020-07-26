@@ -872,7 +872,7 @@ body::-webkit-scrollbar-thumb
     margin-top: 50px;
     display: block;
     position: fixed;
-    background-color: #3190d4;
+    background-color: #3B98FF;
     min-width: 240px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 100;
@@ -894,7 +894,7 @@ body::-webkit-scrollbar-thumb
     padding: 0;
   }
   .dropdown-content span:hover {
-    background-color: #d3d3d3;
+    background-color: #a6d0ff;
   }
 
   .alogo {
