@@ -869,7 +869,7 @@ body::-webkit-scrollbar-thumb
     display: block;
     position: fixed;
     background-color: #3190d4;
-    min-width: 235px;
+    min-width: 240px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 100;
     border-radius: 10px;
@@ -883,7 +883,7 @@ body::-webkit-scrollbar-thumb
     text-align: right;
     border-bottom: 1px solid #a9d1ff54;
     font-family: 'Quicksand';
-    font-size: 4.2vw;
+    font-size: 5vw;
   }
 
   .dropdown-content a {
