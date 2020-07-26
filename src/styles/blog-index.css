@@ -206,7 +206,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-links {
   display: flex;
-  width: 30vw;
+  width: 22vw;
   justify-content: space-between;
   align-items: center;
 }
