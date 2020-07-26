@@ -6,8 +6,8 @@ const { url } = require('inspector');
 var Cosmic = require('cosmicjs');
 var api = Cosmic();
 var bucket = api.bucket({
-    slug:'zecide-website-blogs',
-    read_key: 'zw1IAwKVv5t7Nggo2tdgFBFICuOO1ndxCDTHyVcSZQcuD2NdM7'
+    slug:'zecide-blogs',
+    read_key: 'ux7DSu9vRfdtTCzg3Q8iCkTzFwjkv4gkUKDgzgsGTHnsncEOgR'
 });
 //get the homepage
 router.get('/',function(req,res){
@@ -55,12 +55,21 @@ router.get('/blog', function(req, res, next) {
     })
   });
 
+  //Markdown Parser
+  var MarkdownIt = require('markdown-it'),
+  md = new MarkdownIt();
+  function mdParse(text){
+    var result = md.render(text);
+    return result;
+}
+
 /* GET individual blog post */
 router.get('/blog/:slug', function(req, res, next) {
     bucket.getObject({
         slug: req.params.slug
     }).then(data => {
-      //console.log(data);
+    //   console.log(data);
+      data.object.metadata.markdown_content = mdParse(data.object.metadata.markdown_content)
     res.render('post', { 'data': data});
     })
   });

@@ -114,14 +114,10 @@
     <!-- </div>
   </header> -->
 
-  <div class="w3-center blog-content">
-    <p class="blog-post-text">
-      <%= data.object.metadata.markdown_content %>
+  <div class="blog-content markdown-body">
+    <p class="blog-post-text" id="md">
+      <%- data.object.metadata.markdown_content %>
   </p>
-    <img class="blog-post-img" src="<%= data.object.metadata.image.url%>" alt="">
-    <p class="blog-post-text">
-        <%= data.object.metadata.markdown_content %>
-    </p>
     <p class="blog-post-text"><strong><em>
       by <%= data.object.metadata.author %></em></strong>
     </p>

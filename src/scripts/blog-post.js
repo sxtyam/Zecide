@@ -15,3 +15,9 @@ function w3_open() {
   function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
   }
+
+  var md = document.getElementById('md');
+  var mdcontent = md.innerHTML;
+  console.log(mdcontent);
+
+

@@ -19,7 +19,6 @@ const fetch = require("node-fetch");
 
 const PORT = process.env.PORT || 3000;
 
-
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var path = require('path');
