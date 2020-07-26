@@ -1528,6 +1528,7 @@ body::-webkit-scrollbar-thumb
   }
 
   .copyright-m{
+    display: block;
     margin-left: 13vw;
     margin-top: 2vh;
     margin-bottom: 4vh;
