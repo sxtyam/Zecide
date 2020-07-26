@@ -858,8 +858,8 @@ body::-webkit-scrollbar-thumb
   }
 
   .navbar span:hover,
-  .dropdown:hover .dropbtn {
-    background-color: #ffffff;
+  .dropdown:hover .dropbtn, .dropbtn:active, .dropbtn:focus{
+    background-color: #ffffff !important;
   }
   .dropdown-content {
     display: none;
@@ -892,6 +892,7 @@ body::-webkit-scrollbar-thumb
   .dropdown-content span:hover {
     background-color: #d3d3d3;
   }
+
   .alogo {
     width: 3vw;
     margin-right: 2vw;
@@ -916,6 +917,10 @@ body::-webkit-scrollbar-thumb
   .navbar-m button {
     padding: 5px !important;
     margin: 0 20px 0 0 !important;
+  }
+
+  a{
+    outline: none;
   }
 
   button {
@@ -1488,7 +1493,7 @@ body::-webkit-scrollbar-thumb
     border: none;
     outline: none;
     border-radius: 0 20px 20px 0;
-    background-color: #8fc3ff;
+    background-color: #6ec5ff;
     color: #ffffff;
     font-weight: 800;
     height: 5.9vh;
