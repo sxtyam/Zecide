@@ -105,7 +105,7 @@ function useData(d){
         commentPost.className = 'comment-post';
 
         if (d[i].Content===undefined){     
-            profileProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
+            profileProfilePic.setAttribute('src', '/src/images/default-profile-picture.jpg');
             name.innerHTML=d[i].Author.Name;
             var dateData = d[i].date;
             var date1 = Date.parse(dateData);
@@ -124,13 +124,13 @@ function useData(d){
             downvoteCount.innerHTML=d[i].DownVote.length;
             commentsImg.setAttribute('src', '/src/images/comments.svg');
             commentsCount.innerHTML=d[i].comments.length + " comments";
-            userImg.setAttribute('src', '/src/images/profile-img.jpg');
+            userImg.setAttribute('src', '/src/images/default-profile-picture.jpg');
             commentInput.setAttribute('placeholder', 'Write a comment..');
             commentPost.setAttribute('src', '/src/images/send.svg');
         }
         else{        
             profileCard.style.display = "none";
-            // profileProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
+            // profileProfilePic.setAttribute('src', '/src/images/default-profile-picture.jpg');
             // name.innerHTML=d[i].NewsSource;
             // var dateData = d[i].PublishedAt;
             // var date1 = Date.parse(dateData);
@@ -155,7 +155,7 @@ function useData(d){
             // downvoteCount.innerHTML=d[i].DownVote.length;
             // commentsImg.setAttribute('src', '/src/images/comments.svg');
             // commentsCount.innerHTML=d[i].comments.length + " comments";
-            // userImg.setAttribute('src', '/src/images/profile-img.jpg');
+            // userImg.setAttribute('src', '/src/images/default-profile-picture.jpg');
             // commentInput.setAttribute('placeholder', 'Write a comment..');
             // commentPost.setAttribute('src', '/src/images/send.svg');
             // profileVerified.style.visibility="hidden";

@@ -4,7 +4,7 @@ myHeaders.append('authorization', getCookie('token'));
 
 function fetchPostData(){
     var dataset;
-    fetch('https://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8010/Posts/0',{
+    fetch('http://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8000/Posts/0',{
       method: 'get',
       headers: myHeaders,
   })
@@ -135,7 +135,7 @@ function useData(d){
         commentPost.className = 'comment-post';
 
         if (d[i].Content===undefined){     
-            feedProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
+            feedProfilePic.setAttribute('src', '/src/images/default-profile-picture.jpg');
             name.innerHTML=d[i].Author.Name;
             var dateData = d[i].date;
             var date1 = Date.parse(dateData);
@@ -159,7 +159,7 @@ function useData(d){
             commentPost.setAttribute('src', '/src/images/send.svg');
         }
         else{        
-            feedProfilePic.setAttribute('src', '/src/images/profile-img.jpg');
+            feedProfilePic.setAttribute('src', '/src/images/default-profile-picture.jpg');
             name.innerHTML=d[i].NewsSource;
             var dateData = d[i].PublishedAt;
             var date1 = Date.parse(dateData);

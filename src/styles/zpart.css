@@ -174,11 +174,11 @@ a{
     margin-top: 15vh;
 }
 
-.nav-item img{
-    width: 1.6vw;
+.nav-item img {
+    width: 2vw;
     min-width: 15px;
     margin-right: 2vw;
-}
+  }
 
 .card-container{
     grid-column: 4/10;
