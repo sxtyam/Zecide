@@ -499,14 +499,15 @@ a {
     padding: 2vh 0;
   }
 
-  .upper-nav > div {
+  .upper-nav > div{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 87.5vw;
+    width: 87.5%;
     margin: auto 10vw auto 5vw;
     background-color: #ffffff;
-  }
+    padding-right: 6.25%;
+}
 
   .logo {
     display: flex;

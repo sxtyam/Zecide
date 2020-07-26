@@ -570,7 +570,7 @@ margin-bottom: 20px;
     .upper-nav{
         z-index: 100;
         margin-left: 0vw;
-        background-color: #ffffff;
+        
     }
     
     .upper-nav>*{
@@ -581,9 +581,10 @@ margin-bottom: 20px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 87.5vw;
+        width: 87.5%;
         margin: auto 10vw auto 5vw;
         background-color: #ffffff;
+        padding-right: 6.25%;
     }
     
     .logo{
