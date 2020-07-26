@@ -883,7 +883,7 @@ body::-webkit-scrollbar-thumb
     text-align: right;
     border-bottom: 1px solid #a9d1ff54;
     font-family: 'Quicksand';
-    font-size: 5vw;
+    font-size: 4.2vw;
   }
 
   .dropdown-content a {
