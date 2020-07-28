@@ -31,7 +31,7 @@ form.addEventListener('submit', function(e){
     var infoObject = { "UserName": username, "Email": email, "password": password };
     var info = JSON.stringify(infoObject);
     formData.append("user",info);
-    fetch('https://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8010/Users', {
+    fetch('http://ec2-15-206-1-218.ap-south-1.compute.amazonaws.com:8000/users', {
         method: 'post',
         body: formData
     }).then(function(response){

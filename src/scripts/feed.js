@@ -1,10 +1,10 @@
 const myHeaders = new Headers();
-console.log(getCookie('token'));
-myHeaders.append('authorization', getCookie('token'));
+var token = getCookie('token');
+myHeaders.append('authorization', 'Token ' + token);
 
 function fetchPostData(){
     var dataset;
-    fetch('http://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8000/Posts/0',{
+    fetch('http://ec2-15-206-1-218.ap-south-1.compute.amazonaws.com:8000/posts/0',{
       method: 'get',
       headers: myHeaders,
   })
@@ -42,6 +42,7 @@ getUsername();
 
 function useData(d){
     data= d;
+    console.log(d);
     len= data.length;
     for(var i=0; i<len; i++){
         var feedCard = document.createElement('div');
@@ -58,6 +59,9 @@ function useData(d){
         var zHeatImg = document.createElement('img');
         var zHeat = document.createElement('span');
         var feedCardMid = document.createElement('div');
+        var feedPostLink = document.createElement('a');
+        var feedPostText = document.createElement('p');
+        var feedPostImg = document.createElement('img');
         var feedCardBottom = document.createElement('div');
         var upAndDown = document.createElement('div');
         var upvote = document.createElement('div');
@@ -76,7 +80,7 @@ function useData(d){
 
         cardContainer.append(feedCard);
         feedCard.append(feedCardTop);
-        feedCard.append(feedCardMid);
+        feedCard.append(feedPostLink);
         feedCard.append(feedCardBottom);
         feedCard.append(feedCardComments);
         feedCardTop.append(feedCardTopLeft);
@@ -90,6 +94,9 @@ function useData(d){
         feedCardTopRight.append(zScore);
         feedCardTopRight.append(zHeatImg);
         feedCardTopRight.append(zHeat);
+        feedPostLink.append(feedCardMid);
+        feedCardMid.append(feedPostText);
+        feedCardMid.append(feedPostImg);
         feedCardBottom.append(upAndDown);
         feedCardBottom.append(comments);
         upAndDown.append(upvote);
@@ -117,7 +124,10 @@ function useData(d){
         zScore.className = 'z-score';
         zHeatImg.className = 'z-heat-img';
         zHeat.className = 'z-heat';
+        feedPostLink.className = 'feed-post-link';
         feedCardMid.className = 'feed-card-mid';
+        feedPostText.className = 'feed-post-text';
+        feedPostImg.className = 'feed-post-img';
         feedCardBottom.className = 'feed-card-bottom';
         upAndDown.className = 'upanddown';
         upvote.className = 'upvote';
@@ -154,7 +164,7 @@ function useData(d){
             downvoteCount.innerHTML=d[i].DownVote.length;
             commentsImg.setAttribute('src', '/src/images/comments.svg');
             commentsCount.innerHTML=d[i].comments.length + " comments";
-            userImg.setAttribute('src', '/src/images/feed-img.jpg');
+            userImg.setAttribute('src', '/src/images/default-profile-picture.jpg');
             commentInput.setAttribute('placeholder', 'Write a comment..');
             commentPost.setAttribute('src', '/src/images/send.svg');
         }
@@ -171,14 +181,16 @@ function useData(d){
             //zScore.innerHTML=d[i].Author.WeightNum.toPrecision(3);
             //zHeatImg.setAttribute('src', '/src/images/z-heat.svg');
             //zHeat.innerHTML=d[i].Author.Weightage.toPrecision(3);
-            feedCardMid.innerHTML=d[i].Content;
+            feedPostLink.setAttribute('href', d[i].Url);
+            feedPostText.innerHTML=d[i].Content;
+            feedPostImg.setAttribute('src', d[i].UrlToImage);
             upvoteImg.setAttribute('src', '/src/images/upvote.svg');
             upvoteCount.innerHTML=d[i].UpVote.length;
             downvoteImg.setAttribute('src', '/src/images/downvote.svg');
             downvoteCount.innerHTML=d[i].DownVote.length;
             commentsImg.setAttribute('src', '/src/images/comments.svg');
             commentsCount.innerHTML=d[i].comments.length + " comments";
-            userImg.setAttribute('src', '/src/images/feed-img.jpg');
+            userImg.setAttribute('src', '/src/images/default-profile-picture.jpg');
             commentInput.setAttribute('placeholder', 'Write a comment..');
             commentPost.setAttribute('src', '/src/images/send.svg');
             feedVerified.style.visibility="hidden";

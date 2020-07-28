@@ -41,6 +41,10 @@ app.listen(PORT, function(){
     console.log("Server started at port 3000!");
 })
 
+app.use(function(req, res, next) {
+    res.status(404).sendFile(path.join(__dirname, "/public/404.html"));
+});
+
 // var users = [
 //     {
 //         username: 'ankitanshu',

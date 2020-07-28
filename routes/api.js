@@ -26,6 +26,14 @@ router.get('/users/current',function(req,res){
     res.sendFile(path.join(__dirname, "../public/profile.html"))
 })
 
+router.get('/Insights',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/insights.html"))
+})
+
+router.get('/Tools',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/tools.html"))
+})
+
 router.get('/z',function(req,res){
     res.sendFile(path.join(__dirname, "../public/zpart.html"))
 })
@@ -51,7 +59,7 @@ router.get('/blog', function(req, res, next) {
     bucket.getObjects({
         limit: 5
     }).then(data => {
-    res.render('index', { 'data': data});
+    res.render('blog-index', { 'data': data});
     })
   });
 
@@ -70,7 +78,7 @@ router.get('/blog/:slug', function(req, res, next) {
     }).then(data => {
     //   console.log(data);
       data.object.metadata.markdown_content = mdParse(data.object.metadata.markdown_content)
-    res.render('post', { 'data': data});
+    res.render('blog-post', { 'data': data});
     })
   });
 
