@@ -1,70 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zecide - Z-Part</title>
-    <link rel="icon" href="/src/images/logo.svg">
-    <link rel="stylesheet" href="/src/styles/insights.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zecide - Insights</title>
+    <link rel="icon" href="/src/images/logo.svg" />
+    <link rel="stylesheet" href="/src/styles/insights.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <svg class="pl-svg" width="200" height="200" viewBox="0 0 100 100">
+        <polyline
+          class="line-cornered stroke-still"
+          points="0,0 100,0 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+        <polyline
+          class="line-cornered stroke-still"
+          points="0,0 0,100 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+        <polyline
+          class="line-cornered stroke-animation"
+          points="0,0 100,0 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+        <polyline
+          class="line-cornered stroke-animation"
+          points="0,0 0,100 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+      </svg>
+    </div>
+    <!-- Preloader -->
+
     <div class="upper-nav">
-        <div>
+      <div>
         <div class="logo">
-            <img src="/src/images/logo.svg" alt="">
-            <span>Zecide</span>
+          <img src="/src/images/logo.svg" alt="" />
+          <span>Zecide</span>
         </div>
         <div class="upper-nav-1">
-        <div class="search">
-            <input placeholder="Search.." style="border: none;"/>
-            <img src="/src/images/search.svg"/>
+          <div class="search">
+            <input placeholder="Search.." style="border: none;" />
+            <img src="/src/images/search.svg" />
+          </div>
+          <button class="download-btn">Download the App</button>
         </div>
-        <button class="download-btn">Download the App</button>
-    </div>
         <div class="profile-dropdown">
-            <img src="/src/images/profile-img.jpg" alt="">
-            <span>Siddharth</span>
-            <img class="dropdown-btn" src="/src/images/dropdown-button.svg" alt="">
+          <img src="/src/images/default-profile-picture.jpg" class="dropdown-img" alt="">
+          <span id="user-name">Siddharth</span>
+          <div class="dropdown">
+              <button class="dropbtn">
+              <img
+                  class="burger dropdown-img"
+                  id="burger"
+                  src="/src/images/dropdown-button.svg"
+                  alt="burger"
+              />
+              </button>
+              <div class="dropdown-content">
+              <a href="/"> <span>Logout</span> </a>
+              </div>
+          </div>
         </div>
-    </div>
+      </div>
     </div>
     <div class="side-nav">
-        <div>
-            <a href="/posts/0"><div class="nav-item">
-            <img src="/src/images/feed.svg" alt="">
+      <div>
+        <a href="/posts/0"
+          ><div class="nav-item">
+            <img src="/src/images/feed.svg" alt="" />
             <span>Feed</span>
-        </div>
-            </a>
-        <div class="nav-item">
-            <img src="/src/images/insights.svg" alt="">
+          </div>
+        </a>
+        <a href="/insights">
+          <div class="nav-item nav-item-active">
+            <img src="/src/images/insights-active.svg" alt="" />
             <span>Insights</span>
-        </div>
-        <div class="nav-item nav-z-part nav-item-active">
-            <img src="/src/images/z-part.svg" alt="">
+          </div>
+        </a>
+        <a href="/z">
+          <div class="nav-item nav-z-part">
+            <img src="/src/images/z-part.svg" alt="" />
             <span>Z-Part</span>
-        </div>
-        <div class="nav-item">
-            <img src="/src/images/tools.svg" alt="">
+          </div>
+        </a>
+        <a href="/tools">
+          <div class="nav-item">
+            <img src="/src/images/tools.svg" alt="" />
             <span>Tools</span>
-        </div>
-        <div class="nav-item">
-            <img src="/src/images/profile.svg" alt="">
-            <a href="/users/current"><span>Profile</span></a>
-        </div>
+          </div>
+        </a>
+        <a href="/users/current">
+          <div class="nav-item">
+            <img src="/src/images/profile.svg" alt="" />
+            <span>Profile</span>
+          </div>
+        </a>
         <div class="nav-item nav-help">
-            <img src="/src/images/help.svg" alt="">
-            <span>Help & Support</span>
+          <img src="/src/images/help.svg" alt="" />
+          <span>Help & Support</span>
         </div>
         <div class="nav-item nav-about-us">
-            <img src="/src/images/about.svg" alt="">
-            <span>About Us</span>
+          <img src="/src/images/about.svg" alt="" />
+          <span>About Us</span>
         </div>
-    </div>
+      </div>
     </div>
     <div class="card-container">
-        <div>dwasdwasdwadwasdwasdwa
-        </div>
+      <div class="container-heading">
+        <h2>Insights</h2>
+      </div>
+      <div class="card-container-1">
+        <a href="/Insights/SectorSentiment"
+          ><div class="insight-1 tool-card">
+            <img
+              class="tool-card-image"
+              src="/src/images/sector-sentiment.svg"
+              alt=""
+            />
+            <br />
+            <big
+              >Sector<br />
+              Sentiment</big
+            >
+          </div></a
+        >
+        <a href="/Insights/SectorReports"
+          ><div class="insight-2 tool-card">
+            <img
+              class="tool-card-image"
+              src="/src/images/sector-report.svg"
+              alt=""
+            /><br />
+            <big
+              >Sector<br />
+              Report</big
+            >
+          </div></a
+        >
+    
+          <div class="insight-3 tool-card">
+            <div class="chat-heading"><img src="/src/images/logo.svg" alt="" srcset=""><big> - AI Financial Research Assistant</big></div>
+          
+        
+        
+<div class="page__main">
+    <div class="block--background">
+      <div class="chatbot__overview">
+        <ul class="chatlist">
+          <li class="bot__output bot__output--standard">Hey, I'm Z! <br><img class="z" src="/src/images/z.svg" alt="" srcset=""> </li>
+          <li class="bot__output bot__output--standard">I am an AI Financial Research Assistant!</li>
+          <li class="bot__output bot__output--standard">
+            <span class="bot__output--second-sentence">You can ask me a bunch of things! Few examples:</span>
+            <ul class="list-of-questions">
+              <li class="input__nested-list">How is the market right <span class="bot__command">now</span></li>
+              <li class="input__nested-list">Which stocks to <span class="bot__command">buy</span> 
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="chatbox-area">
+        <form action="" id="chatform">
+            <textarea placeholder="Talk to me!" class="chatbox" name="chatbox" resize: "none" minlength="2"></textarea>
+            <input class="submit-button" type="submit" value="Send">
+        </form>
+      </div>
     </div>
-    <script src="/src/scripts/zpart.js"></script>
-</body>
+</div>
+
+      </div>
+    </div>
+    <script src="/src/scripts/insights.js"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

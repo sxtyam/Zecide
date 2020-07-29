@@ -5,6 +5,7 @@
   "main": "server.js",
   "start": "node server.js",
   "scripts": {
+    "compile:sass": "node-sass src/scss/insights.scss src/styles/insights.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +29,7 @@
     "markdown-it": "^11.0.0",
     "morgan": "^1.10.0",
     "node-fetch": "^2.6.0",
+    "node-sass": "^4.14.1",
     "ssl-express-www": "^3.0.7"
   },
   "devDependencies": {

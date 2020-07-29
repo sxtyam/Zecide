@@ -30,6 +30,14 @@ router.get('/Insights',function(req,res){
     res.sendFile(path.join(__dirname, "../public/insights.html"))
 })
 
+router.get('/Insights/SectorSentiment',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/sector-sentiments.html"))
+})
+
+router.get('/Insights/SectorReports',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/sector-reports.html"))
+})
+
 router.get('/Tools',function(req,res){
     res.sendFile(path.join(__dirname, "../public/tools.html"))
 })

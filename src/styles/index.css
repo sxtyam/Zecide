@@ -295,6 +295,11 @@ button:active {
   color: #287ccf;
 }
 
+.waitlist big{
+  color: #3b98ff;
+  font-weight: 600;
+}
+
 .mid {
   background-color: #ffffff;
   /* background-image: url(../images/mid-bg.svg); */
@@ -691,6 +696,9 @@ button:active {
 
 .waitlist-f p{
   margin-top: 0;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
 }
 
 .waitlist-f form{
@@ -1542,6 +1550,7 @@ body::-webkit-scrollbar-thumb
   .address p{
     padding: 0;
     margin: 0;
+    margin-bottom: 0px;
   }
   
   .footer-right{

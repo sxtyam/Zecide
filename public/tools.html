@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="/src/styles/tools.css" />
   </head>
   <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <svg class="pl-svg" width="200" height="200" viewBox="0 0 100 100">
+        <polyline
+          class="line-cornered stroke-still"
+          points="0,0 100,0 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+        <polyline
+          class="line-cornered stroke-still"
+          points="0,0 0,100 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+        <polyline
+          class="line-cornered stroke-animation"
+          points="0,0 100,0 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+        <polyline
+          class="line-cornered stroke-animation"
+          points="0,0 0,100 100,100"
+          stroke-width="10"
+          fill="none"
+        ></polyline>
+      </svg>
+    </div>
+    <!-- Preloader -->
+
     <div class="upper-nav">
       <div>
         <div class="logo">
@@ -22,13 +53,21 @@
           <button class="download-btn">Download the App</button>
         </div>
         <div class="profile-dropdown">
-          <img src="/src/images/profile-img.jpg" alt="" />
-          <span>Siddharth</span>
-          <img
-            class="dropdown-btn"
-            src="/src/images/dropdown-button.svg"
-            alt=""
-          />
+          <img src="/src/images/default-profile-picture.jpg" class="dropdown-img" alt="">
+          <span id="user-name">Siddharth</span>
+          <div class="dropdown">
+              <button class="dropbtn">
+              <img
+                  class="burger dropdown-img"
+                  id="burger"
+                  src="/src/images/dropdown-button.svg"
+                  alt="burger"
+              />
+              </button>
+              <div class="dropdown-content">
+              <a href="/"> <span>Logout</span> </a>
+              </div>
+          </div>
         </div>
       </div>
     </div>
@@ -41,29 +80,29 @@
           </div>
         </a>
         <a href="/insights">
-        <div class="nav-item">
-          <img src="/src/images/insights.svg" alt="" />
-          <span>Insights</span>
-        </div>
-    </a>
-    <a href="/z">
-        <div class="nav-item nav-z-part">
-          <img src="/src/images/z-part.svg" alt="" />
-          <span>Z-Part</span>
-        </div>
-    </a>
-    <a href="/tools">
-        <div class="nav-item nav-item-active">
-          <img src="/src/images/tools-active.svg" alt="" />
-          <span>Tools</span>
-        </div>
-    </a>
-    <a href="/users/current">
-        <div class="nav-item">
-          <img src="/src/images/profile.svg" alt="" />
-          <span>Profile</span>
-        </div>
-    </a>
+          <div class="nav-item">
+            <img src="/src/images/insights.svg" alt="" />
+            <span>Insights</span>
+          </div>
+        </a>
+        <a href="/z">
+          <div class="nav-item nav-z-part">
+            <img src="/src/images/z-part.svg" alt="" />
+            <span>Z-Part</span>
+          </div>
+        </a>
+        <a href="/tools">
+          <div class="nav-item nav-item-active">
+            <img src="/src/images/tools-active.svg" alt="" />
+            <span>Tools</span>
+          </div>
+        </a>
+        <a href="/users/current">
+          <div class="nav-item">
+            <img src="/src/images/profile.svg" alt="" />
+            <span>Profile</span>
+          </div>
+        </a>
         <div class="nav-item nav-help">
           <img src="/src/images/help.svg" alt="" />
           <span>Help & Support</span>
@@ -75,19 +114,89 @@
       </div>
     </div>
     <div class="card-container">
-        <div class="container-heading">
-    <h2>Tools by</h2>
-    <img src="/src/images/logo.svg" alt="">
-        </div>
-        <div class="card-container-1">
-      <div class="tool-1 tool-card"> <img class="tool-card-image" src="/src/images/portfolio_optimization.svg" alt=""> <br> <big>Portfolio<br> Optimisation</big> </div>
-      <div class="tool-2 tool-card"> <img class="tool-card-image" src="/src/images/buy-sell opportunity.svg" alt=""><br> <big>Buy/Sell<br> Opportunity</big></div>
-      <div class="tool-3 tool-card"> <img class="tool-card-image" src="/src/images/bubble_detector.svg" alt=""> <br><big>Bubble<br> Detector</big></div>
-      <div class="tool-4 tool-card"> <img class="tool-card-image" src="/src/images/comparative_correlation.svg" alt=""><br> <big>Comparative<br> Correlation</big></div>
-      <div class="tool-5 tool-card"> <img class="tool-card-image" src="/src/images/clustering.svg" alt=""> <br><big>Clustering</big></div>
-      <div class="tool-6 tool-card"> <img class="tool-card-image" src="/src/images/volume_comparison.svg" alt=""><br> <big>Volume<br> Comparison</big></div>
+      <div class="container-heading">
+        <h2>Tools by</h2>
+        <img src="/src/images/logo.svg" alt="" />
+      </div>
+      <div class="card-container-1">
+        <a href=""
+          ><div class="tool-1 tool-card">
+            <img
+              class="tool-card-image"
+              src="/src/images/portfolio_optimization.svg"
+              alt=""
+            />
+            <br />
+            <big
+              >Portfolio<br />
+              Optimisation</big
+            >
+          </div></a
+        >
+        <a href=""
+          ><div class="tool-2 tool-card">
+            <img
+              class="tool-card-image"
+              src="/src/images/buy-sell opportunity.svg"
+              alt=""
+            /><br />
+            <big
+              >Buy/Sell<br />
+              Opportunity</big
+            >
+          </div></a
+        >
+        <a href="">
+          <div class="tool-3 tool-card">
+            <img
+              class="tool-card-image"
+              src="/src/images/bubble_detector.svg"
+              alt=""
+            />
+            <br /><big
+              >Bubble<br />
+              Detector</big
+            >
+          </div></a
+        >
+        <a href=""
+          ><div class="tool-4 tool-card">
+            <img
+              class="tool-card-image"
+              src="/src/images/comparative_correlation.svg"
+              alt=""
+            /><br />
+            <big
+              >Comparative<br />
+              Correlation</big
+            >
+          </div></a
+        >
+        <a href=""
+          ><div class="tool-5 tool-card">
+            <img
+              class="tool-card-image"
+              src="/src/images/clustering.svg"
+              alt=""
+            />
+            <br /><big>Clustering</big>
+          </div></a
+        >
+        <a href=""
+          ><div class="tool-6 tool-card">
+            <img
+              class="tool-card-image"
+              src="/src/images/volume_comparison.svg"
+              alt=""
+            /><br />
+            <big
+              >Volume<br />
+              Comparison</big
+            >
+          </div></a
+        >
+      </div>
     </div>
-</div>
-    <script src="/src/scripts/zpart.js"></script>
+    <script src="/src/scripts/tools.js"></script>
   </body>
 </html>
