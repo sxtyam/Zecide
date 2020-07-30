@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f22113ff31097001243b5c5&product=sticky-share-buttons" async="async"></script>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f22113ff31097001243b5c5&product=sticky-share-buttons' async='async'></script>
   <title>Zecide Blogs</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +11,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='../src/styles/blog-post.css' />
   <meta name="keywords" content="zecide, fintech, finance, artificial intelligence">
-  <meta name="author" content="Zecide">
+  <meta name="author" content="<%= data.object.metadata.description %>">
+  <meta name="description" content="Zecide">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Zecide Blogs">
+  <meta property="og:title" content="<%= data.object.title %>">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zecide.com/">
-  <meta property="og:image" content="https://zecide.com/src/images/logo.png">
+  <meta property="og:description" content="<%= data.object.metadata.description %>">
+  <meta property="og:image" content="<%= data.object.metadata.cover_image.url%>">
   <meta property="og:site_name" content="Zecide">
   <link rel="canonical" href="https://zecide.com/">
   <link rel="shortcut icon" href="../src/images/logo.svg" type="image/x-icon">
@@ -171,7 +173,7 @@ s.setAttribute('data-timestamp', +new Date());
       <div class="address-section">
         <img src="../src/images/footer-art.svg" alt="" srcset="" />
         <div class="address">
-          <h3>Office</h3>
+          <h3 class="office">Office</h3>
           <p>
             LGF, 416, Sector 45 <br />
             Gurgaon, Haryana <br />

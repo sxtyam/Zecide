@@ -1455,7 +1455,7 @@ background: rgba(0, 0, 0, .2);
 }
 
 .footer-right{
-  margin-top: 2vh;
+
   margin-right: 14vw;
   display: flex;
   flex-direction: row;
@@ -1468,17 +1468,19 @@ background: rgba(0, 0, 0, .2);
   
 }
 
-.waitlist-f p{
-  margin-top: 0;
+.waitlist-f p, .office{
+  margin: 0 !important;
   font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 12px;
+  font-size: 18px !important;
+ 
 }
 
 .waitlist-f form{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
 }
 
 .waitlist-f .waitlist-f-mail{
@@ -1515,6 +1517,10 @@ background: rgba(0, 0, 0, .2);
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+}
+
+.social-links p{
+  margin: 0 !important;
 }
 
 .social-links img{
@@ -1727,7 +1733,18 @@ background: rgba(0, 0, 0, .2);
     margin: 20px 8px 35px 8px;
     font-size: 16px !important;
   }
+
+  .footer h3{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .footer p{
+    margin-left: 0;
+  }
   
+
+
 .author-card{
   padding: 30px 20px 20px 20px;
   width: 80%;

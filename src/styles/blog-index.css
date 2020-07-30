@@ -341,11 +341,15 @@ h6 {
   
 }
 
-.waitlist-f p{
+.waitlist-f p, .office{
   margin-top: 0;
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 12px;
+}
+
+.office{
+  margin-bottom: 7px !important;
 }
 
 .waitlist-f form{
@@ -561,9 +565,9 @@ h6 {
     padding: 0 !important;
   }
 
-  p {
+  .w3-card p {
     margin: 20px 8px 35px 8px;
-    font-size: 16px !important;
+    font-size: 16px;
   }
   
 .footer{
@@ -605,7 +609,7 @@ h6 {
   margin-bottom: 4vh;
 }
 
-.address h3{
+.address h3, .office{
   padding: 0;
   margin: 0 0 1vh 0;
 }
