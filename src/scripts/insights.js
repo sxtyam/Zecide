@@ -46,7 +46,7 @@ Interested in poking into Zecide projects in a MORE in-depth way?
 Interested in getting paid for it?
 
 Get in touch with us to know about the opening for our team:
-*Insert Email Address*`, "font-family:monospace");
+siddharth@zecide.com`, "font-family:monospace");
 })
 
 const navToggle = () => {

@@ -5,7 +5,7 @@
   "main": "server.js",
   "start": "node server.js",
   "scripts": {
-    "compile:sass": "node-sass src/scss/insights.scss src/styles/insights.css -w",
+    "sass": "node-sass src/scss/insights.scss src/styles/insights.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

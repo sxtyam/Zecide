@@ -26,6 +26,7 @@ body {
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-gap: 20px;
+    overflow: hidden;
 }
 
 
@@ -306,7 +307,7 @@ a{
   }
 
 .card-container{
-    grid-column: 4/13;
+    grid-column: 4/16;
     grid-row: 2/8;
     flex-direction: column;
     width: 100%;
@@ -350,15 +351,29 @@ a{
 
 .insight-1{
     grid-area: a;
+    display: flex;
+    height: 33.65vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .insight-2{
     grid-area: b;
+    height: 33.65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .insight-3{
     grid-area: c;
     max-width: 40vw;
-    max-height: 70vh;
+    max-height: 80vh;
+}
+
+.insight-1 img, .insight-2 img{
+  margin-bottom: 2vh;
 }
 
 
@@ -367,15 +382,16 @@ a{
     display: grid;
     flex-direction: column;
     width: 100%;
+    height: 69vh;
     margin: 0 auto;
     grid-template:
     'a c'
     'b c';
-    grid-gap: 2.6vw;
+    grid-gap: 1.7vw;
 }
 
 .z{
-    width: 100px !important;
+    width: 90px !important;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 30px;
@@ -435,12 +451,15 @@ $bot-output-delay: 400ms;
 
 .page__main{
     max-width: 35vw !important;
-    max-height: 37vh !important;
+    max-height: 60vh !important;
 }
 
 .block--background{
     max-width: 35vw !important;
-    max-height: 37vh !important;
+    max-height: 55vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .list-of-questions{
@@ -457,7 +476,7 @@ $bot-output-delay: 400ms;
 
   // max-width: 35em;
   min-height: 30vh;
-  max-height: 38vh;
+  max-height: 70vh;
   margin: 0 0;
 
   // background-color: #444;
@@ -648,8 +667,9 @@ input[type="submit"] {
   -webkit-appearance: none;
   appearance: none;
   border: 0;
-
-  width: 25%;
+  font-family: 'Quicksand' !important;
+  font-weight: 400;
+  width: 20%;
   margin: 0;
 
   background-color: $main-color-2;
@@ -731,6 +751,7 @@ input[type="submit"] {
         animation: fadein 0.5s;
         display: flex;
         flex-direction: column;
+        overflow: scroll;
     }
     
     a{
@@ -1009,10 +1030,20 @@ input[type="submit"] {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.068);
     max-width: 78%;
 }
+
+.insight-1{
+  height: 23.65vh;
+}
+
+.insight-2{
+  height: 23.65vh;
+}
+
 .insight-3{
     grid-area: c;
     max-width: 78%;
-    max-height: 60vh;
+    max-height: 75vh;
+    margin-bottom: 40px;
 }
 .card-container-1{
     display: grid;
@@ -1028,10 +1059,15 @@ input[type="submit"] {
 .page__main{
     max-width: 100% !important;
     max-height: 60vh !important;
+    margin-bottom: 20px;
 }
 
 .block--background{
     max-width: 100% !important;
     max-height: 60vh !important;
+}
+
+.chat-heading img{
+  width: 4vw;
 }
 }
