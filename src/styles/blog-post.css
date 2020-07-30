@@ -1528,6 +1528,7 @@ background: rgba(0, 0, 0, .2);
     animation: fadein 0.5s;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    padding-bottom: 0px;
   }
 
   #myHeader {
