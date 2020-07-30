@@ -16,6 +16,21 @@ function w3_open() {
     document.getElementById("mySidebar").style.display = "none";
   }
 
+//   const currentURL;  
+//   function getURL() {
+//     currentURL = window.location.href;
+// }
+
+// getURL();
+
+// const fbshare = document.querySelector('.fb-share');
+// const tshare = document.querySelector('.t-share');
+// const lishare = document.querySelector('.li-share');
+
+// fbshare.setAttribute('href', 'https://www.facebook.com/sharer/sharer.php?u='+currentURL);
+
+
+
   var md = document.getElementById('md');
   var mdcontent = md.innerHTML;
   console.log(mdcontent);

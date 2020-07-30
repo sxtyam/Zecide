@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f22113ff31097001243b5c5&product=sticky-share-buttons" async="async"></script>
   <title>Zecide Blogs</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='../src/styles/blog-post.css' />
+  
   <link rel="shortcut icon" href="../src/images/logo.svg" type="image/x-icon">
 </head>
 
@@ -97,6 +99,19 @@
   <!-- </div>
   </header> -->
 
+
+
+<!-- Social Icons -->
+<!-- <ul id="social_side_links">
+	<li><a class="fb-share" style="background-color: #3c5a96;" href="https://www.facebook.com/sharer/sharer.php?u=zecide.com/blog/" target="_blank"><img src="https://www.dropbox.com/s/xk5pdj8nks1ymdh/facebook-icon.png?raw=1" alt="" /></a></li>
+	<li><a class="t-share" style="background-color: #1dadeb;" href="https://twitter.com" target="_blank"><img src="https://www.dropbox.com/s/c8in3qcf1uqsqrb/twitter-icon.png?raw=1" alt="" /></a></li>
+	<li><a class="li-share" style="background-color: #1178b3;" href="https://linkedin.com" target="_blank"><img src="https://www.dropbox.com/s/pb0a0p7p1pwprue/linkedin-icon.png?raw=1" alt="" /></a></li>
+</ul> -->
+
+
+
+
+
   <div class="blog-content markdown-body">
     <p class="blog-post-text" id="md">
       <%- data.object.metadata.markdown_content %>
@@ -107,14 +122,14 @@
 
 
 <div class="author-card">
-  <img src="<%= post.metadata.author_image.url%>" alt="">
+  <img class="author-photo" src="<%= data.object.metadata.authorphoto.url%>" alt="">
   <div class="author-info">
-    <div class="author-name"><%= data.object.metadata.author %></div>
-    <div class="author-about"><%= data.object.metadata.author %></div>
+    <div class="author-name"> <big> <%= data.object.metadata.author %> </big> </div>
+    <div class="author-about"><%= data.object.metadata.about_author %></div>
   </div>
   <div class="author-social-links">
-    <a href="<%= post.metadata.author_image.url%>"><img src="" alt=""></a>
-    <a href="<%= post.metadata.author_image.url%>"><img src="" alt=""></a>
+    <a href="<%= data.object.metadata.author_linkedin_url%>"><img src="/src/images/linkedin-author.svg" alt=""></a>
+    <a href="<%= data.object.metadata.author_facebook_url%>"><img src="/src/images/facebook-author.svg" alt=""></a>
   </div>
 </div>
 
@@ -128,8 +143,8 @@
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "https://zecide.com/blog/";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = window.location.href; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
@@ -186,6 +201,7 @@ s.setAttribute('data-timestamp', +new Date());
   </div>
   <script id="dsq-count-scr" src="//zecideweb.disqus.com/count.js" async></script>
   <script src="../src/scripts/blog-post.js"></script>
+  
 </body>
 
 </html>

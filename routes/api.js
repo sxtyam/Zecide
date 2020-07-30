@@ -84,7 +84,7 @@ router.get('/blog/:slug', function(req, res, next) {
     bucket.getObject({
         slug: req.params.slug
     }).then(data => {
-    //   console.log(data);
+    console.log(data.object.metadata.authorphoto.url);
       data.object.metadata.markdown_content = mdParse(data.object.metadata.markdown_content)
     res.render('blog-post', { 'data': data});
     })
