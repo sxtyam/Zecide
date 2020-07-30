@@ -1534,6 +1534,7 @@ background: rgba(0, 0, 0, .2);
     background-image: linear-gradient(25deg, #2a84eb 0%, #81d1ff 100%);
     background-position: center;
     background-size: cover;
+    padding: 4vh 5vw 5vh 5vw !important;
     /* background: linear-gradient(to right, #39c0ff 0%, #3b98ff 80%) !important; */
     padding-bottom: 5vh !important;
     margin-bottom: 3.5vh !important;
