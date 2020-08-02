@@ -238,14 +238,14 @@ button:active {
   margin: 1.2vh 0 0 0;
   color: #3b98ff;
   font-weight: 400;
-  font-size: 1.82vw;
+  font-size: 1.52vw;
 }
 
 .text-top > p {
   margin: 4vh 0 4vh 0;
   font-weight: 400;
   font-size: 1.2vw;
-  width: 28vw;
+  width: 32vw;
 }
 
 .d-links {
