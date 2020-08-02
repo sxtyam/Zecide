@@ -161,14 +161,29 @@ a{
     font-size: 1.6vw;
 }
 
-.upper-nav-1{
-    display: flex;
-    justify-content: space-between;
-    width: 57vw;
-    margin-left: 2.5vw;
-    padding: 4vh 2vw 3vh 2vw;
-    background-color: #ffffff;
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
+
+.dropdown-content{
+  align-items: center;
+  border-radius: 20px;
+}
+
+.dropdown ul {
+  
+  list-style: none;
+}
+
+.dropdown li{
+  padding-top: 1.7;
+  padding-right: 3.2vw;
+  padding-bottom: 1.7vh;
+}
+
+
 
 .search{
     display: flex;

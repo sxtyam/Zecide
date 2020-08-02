@@ -72,14 +72,48 @@ a {
 .logo span {
   font-size: 1.6vw;
 }
+.upper-right{
+  display: flex !important;
+  width: 76.7vw;
+  justify-content: space-between;
+}
+
 .upper-nav-1 {
   display: flex;
   justify-content: space-between;
   width: 57vw;
   margin-left: 2.5vw;
-  padding: 4vh 2vw 3vh 2vw;
+  padding: 4vh 0vw 3vh 0vw;
   background-color: #ffffff;
 }
+
+.notification-bell{
+  width: 2.5vw;
+  padding-top: 0.7vh ;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dropdown-content{
+  align-items: center;
+  border-radius: 20px;
+}
+
+.dropdown ul {
+  
+  list-style: none;
+}
+
+.dropdown li{
+  padding-top: 1.7;
+  padding-right: 3.2vw;
+  padding-bottom: 1.7vh;
+}
+
 
 .search {
   display: flex;

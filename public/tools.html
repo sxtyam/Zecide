@@ -1,202 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zecide - Tools</title>
-    <link rel="icon" href="/src/images/logo.svg" />
-    <link rel="stylesheet" href="/src/styles/tools.css" />
-  </head>
-  <body>
-    <!-- Preloader -->
-    <div class="preloader">
-      <svg class="pl-svg" width="200" height="200" viewBox="0 0 100 100">
-        <polyline
-          class="line-cornered stroke-still"
-          points="0,0 100,0 100,100"
-          stroke-width="10"
-          fill="none"
-        ></polyline>
-        <polyline
-          class="line-cornered stroke-still"
-          points="0,0 0,100 100,100"
-          stroke-width="10"
-          fill="none"
-        ></polyline>
-        <polyline
-          class="line-cornered stroke-animation"
-          points="0,0 100,0 100,100"
-          stroke-width="10"
-          fill="none"
-        ></polyline>
-        <polyline
-          class="line-cornered stroke-animation"
-          points="0,0 0,100 100,100"
-          stroke-width="10"
-          fill="none"
-        ></polyline>
-      </svg>
-    </div>
-    <!-- Preloader -->
 
-    <div class="upper-nav">
-      <div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zecide - Tools</title>
+  <link rel="icon" href="/src/images/logo.svg" />
+  <link rel="stylesheet" href="/src/styles/tools.css" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <svg class="pl-svg" width="200" height="200" viewBox="0 0 100 100">
+      <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+      <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+      <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none">
+      </polyline>
+      <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none">
+      </polyline>
+    </svg>
+  </div>
+  <!-- Preloader -->
+
+  <div class="upper-nav">
+    <div>
         <div class="logo">
-          <img src="/src/images/logo.svg" alt="" />
-          <span>Zecide</span>
+            <img src="/src/images/logo.svg" alt="">
+            <span>Zecide</span>
         </div>
-        <div class="upper-nav-1">
-          <div class="search">
-            <input placeholder="Search.." style="border: none;" />
-            <img src="/src/images/search.svg" />
-          </div>
-          <button class="download-btn">Download the App</button>
+        <div class="upper-right">
+            <div class="upper-nav-1">
+                <div class="search">
+                    <input placeholder="Search.." style="border: none;" />
+                    <img src="/src/images/search.svg" />
+                </div>
+
+                <button class="download-btn">App Coming Soon!</button>
+            </div>
+
+
+            <img src="/src/images/notification.svg" alt="" class="notification-bell" srcset="">
+
+
+            <div class="profile-dropdown">
+
+                <img src="/src/images/default-profile-picture.jpg" class="dropdown-img" alt="">
+                <span id="user-name">Siddharth</span>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <img class="burger dropdown-img" id="burger" src="/src/images/dropdown-button.svg"
+                            alt="burger" />
+                    </button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="/"> <span>Logout</span> </a></li>
+                            <li><a href="/"> <span>Settings</span> </a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="profile-dropdown">
-          <img src="/src/images/default-profile-picture.jpg" class="dropdown-img" alt="">
-          <span id="user-name">Siddharth</span>
-          <div class="dropdown">
-              <button class="dropbtn">
-              <img
-                  class="burger dropdown-img"
-                  id="burger"
-                  src="/src/images/dropdown-button.svg"
-                  alt="burger"
-              />
-              </button>
-              <div class="dropdown-content">
-              <a href="/"> <span>Logout</span> </a>
-              </div>
-          </div>
+
+
+
+
+
+        <!-- <div class="profile-dropdown">
+        <img src="/src/images/default-profile-picture.jpg" class="dropdown-img" alt="">
+        <span>Siddharth</span>
+        <img class="dropdown-btn" src="/src/images/dropdown-button.svg" alt="">
+    </div> -->
+    </div>
+
+</div>
+  <div class="side-nav">
+    <div>
+      <a href="/posts/0">
+        <div class="nav-item">
+          <img src="/src/images/feed.svg" alt="" />
+          <span>Feed</span>
         </div>
+      </a>
+      <a href="/insights">
+        <div class="nav-item">
+          <img src="/src/images/insights.svg" alt="" />
+          <span>Insights</span>
+        </div>
+      </a>
+      <a href="/z">
+        <div class="nav-item nav-z-part">
+          <img src="/src/images/z-part.svg" alt="" />
+          <span>Z-Part</span>
+        </div>
+      </a>
+      <a href="/tools">
+        <div class="nav-item nav-item-active">
+          <img src="/src/images/tools-active.svg" alt="" />
+          <span>Tools</span>
+        </div>
+      </a>
+      <a href="/users/current">
+        <div class="nav-item">
+          <img src="/src/images/profile.svg" alt="" />
+          <span>Profile</span>
+        </div>
+      </a>
+      <div class="nav-item nav-help">
+        <img src="/src/images/help.svg" alt="" />
+        <span>Help & Support</span>
+      </div>
+      <div class="nav-item nav-about-us">
+        <img src="/src/images/about.svg" alt="" />
+        <span>About Us</span>
       </div>
     </div>
-    <div class="side-nav">
-      <div>
-        <a href="/posts/0"
-          ><div class="nav-item">
-            <img src="/src/images/feed.svg" alt="" />
-            <span>Feed</span>
-          </div>
-        </a>
-        <a href="/insights">
-          <div class="nav-item">
-            <img src="/src/images/insights.svg" alt="" />
-            <span>Insights</span>
-          </div>
-        </a>
-        <a href="/z">
-          <div class="nav-item nav-z-part">
-            <img src="/src/images/z-part.svg" alt="" />
-            <span>Z-Part</span>
-          </div>
-        </a>
-        <a href="/tools">
-          <div class="nav-item nav-item-active">
-            <img src="/src/images/tools-active.svg" alt="" />
-            <span>Tools</span>
-          </div>
-        </a>
-        <a href="/users/current">
-          <div class="nav-item">
-            <img src="/src/images/profile.svg" alt="" />
-            <span>Profile</span>
-          </div>
-        </a>
-        <div class="nav-item nav-help">
-          <img src="/src/images/help.svg" alt="" />
-          <span>Help & Support</span>
-        </div>
-        <div class="nav-item nav-about-us">
-          <img src="/src/images/about.svg" alt="" />
-          <span>About Us</span>
-        </div>
-      </div>
+  </div>
+  <div class="card-container">
+    <div class="container-heading">
+      <h2>Tools by</h2>
+      <img src="/src/images/logo.svg" alt="" />
     </div>
-    <div class="card-container">
-      <div class="container-heading">
-        <h2>Tools by</h2>
-        <img src="/src/images/logo.svg" alt="" />
-      </div>
-      <div class="card-container-1">
-        <a href="/tools/portfolio"
-          ><div class="tool-1 tool-card">
-            <img
-              class="tool-card-image"
-              src="/src/images/portfolio_optimization.svg"
-              alt=""
-            />
-            <br />
-            <big
-              >Portfolio<br />
-              Optimisation</big
-            >
-          </div></a
-        >
-        <a href="/tools/buysell"
-          ><div class="tool-2 tool-card">
-            <img
-              class="tool-card-image"
-              src="/src/images/buy-sell opportunity.svg"
-              alt=""
-            /><br />
-            <big
-              >Buy/Sell<br />
-              Opportunity</big
-            >
-          </div></a
-        >
-        <a href="/tools/bubble">
-          <div class="tool-3 tool-card">
-            <img
-              class="tool-card-image"
-              src="/src/images/bubble_detector.svg"
-              alt=""
-            />
-            <br /><big
-              >Bubble<br />
-              Detector</big
-            >
-          </div></a
-        >
-        <a href="/tools/comparative"
-          ><div class="tool-4 tool-card">
-            <img
-              class="tool-card-image"
-              src="/src/images/comparative_correlation.svg"
-              alt=""
-            /><br />
-            <big
-              >Comparative<br />
-              Correlation</big
-            >
-          </div></a
-        >
-        <a href="/tools/clustering"
-          ><div class="tool-5 tool-card">
-            <img
-              class="tool-card-image"
-              src="/src/images/clustering.svg"
-              alt=""
-            />
-            <br /><big>Clustering <br><span class="clustering-fix">.</span></big>
-          </div></a
-        >
-        <a href="/tools/comparisonvolume"
-          ><div class="tool-6 tool-card">
-            <img
-              class="tool-card-image"
-              src="/src/images/volume_comparison.svg"
-              alt=""
-            /><br />
-            <big
-              >Volume<br />
-              Comparison</big
-            >
-          </div></a
-        >
-      </div>
+    <div class="card-container-1">
+      <a href="/tools/portfolio">
+        <div class="tool-1 tool-card">
+          <img class="tool-card-image" src="/src/images/portfolio_optimization.svg" alt="" />
+          <br />
+          <big>Portfolio<br />
+            Optimisation</big>
+        </div>
+      </a>
+      <a href="/tools/buysell">
+        <div class="tool-2 tool-card">
+          <img class="tool-card-image" src="/src/images/buy-sell opportunity.svg" alt="" /><br />
+          <big>Buy/Sell<br />
+            Opportunity</big>
+        </div>
+      </a>
+      <a href="/tools/bubble">
+        <div class="tool-3 tool-card">
+          <img class="tool-card-image" src="/src/images/bubble_detector.svg" alt="" />
+          <br /><big>Bubble<br />
+            Detector</big>
+        </div>
+      </a>
+      <a href="/tools/comparative">
+        <div class="tool-4 tool-card">
+          <img class="tool-card-image" src="/src/images/comparative_correlation.svg" alt="" /><br />
+          <big>Comparative<br />
+            Correlation</big>
+        </div>
+      </a>
+      <a href="/tools/clustering">
+        <div class="tool-5 tool-card">
+          <img class="tool-card-image" src="/src/images/clustering.svg" alt="" />
+          <br /><big>Clustering <br><span class="clustering-fix">.</span></big>
+        </div>
+      </a>
+      <a href="/tools/comparisonvolume">
+        <div class="tool-6 tool-card">
+          <img class="tool-card-image" src="/src/images/volume_comparison.svg" alt="" /><br />
+          <big>Volume<br />
+            Comparison</big>
+        </div>
+      </a>
     </div>
-    <script src="/src/scripts/tools.js"></script>
-  </body>
+  </div>
+  <script src="/src/scripts/tools.js"></script>
+</body>
+
 </html>
