@@ -36,3 +36,6 @@ const navToggle = () => {
   });
 };
 navToggle();
+
+
+$(".chosen-select").chosen();

@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">  -->
-    <title>Zecide - Sector Sentiment</title>
+    <title>Zecide - Tools</title>
     <link rel="icon" href="/src/images/logo.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+    <link rel="stylesheet" href="https://harvesthq.github.io/chosen/chosen.css">
     <link rel="stylesheet" href="/src/styles/comparative.css">
 </head>
 
@@ -97,7 +100,114 @@
         </div>
     </div>
     <div class="card-container">
-        
+        <h2>Comparative Correlation</h2>
+        <div class="ff">.</div>
+        <p>This tool finds the correlation of price changes among the companies you selected. Can be useful to look while spotting trades. We will be adding even more advanced measures of finding relationships between companies: both linear and non linear price changes.</p>
+       <p>Select the Stocks you want to add in your Portfolio (Select 3 or more)
+        </p>
+        <div id="output"></div>
+        <form method="get">
+            <label for="startDate" class="label1">Start Date</label>
+            <input type="date" name="startDate" class="date">
+            <label for="endDate">End Date</label>
+            <input type="date" name="endDate" class="date">
+            <select data-placeholder="Select the Stocks.." name="tags[]" multiple class="chosen-select">
+                <option value="IDEA.NS">Idea: IDEA.NS</option>
+                <option value="SBIN.NS">SBI: SBIN.NS</option>
+                <option value="ICICIBANK.NS">ICICI Bank: ICICIBANK.NS</option>
+                <option value="AXISBANK.NS">Axis Bank: AXISBANK.NS</option>
+                <option value="TATAMOTORS.NS">Tata Motors: TATAMOTORS.NS</option>
+                <option value="SAIL.NS">    Steel Authority India Ltd: SAIL.NS
+                </option>
+                <option value="TATAPOWER.NS">    Tata Power: TATAPOWER.NS
+                </option>
+                <option value="RBLBANK.NS">    RBL Bank: RBLBANK.NS
+                </option>
+                <option value="BHEL.NS">    BHEL: BHEL.NS
+                </option>
+                <option value="ADANIPOWER.NS">    Adani Power: ADANIPOWER.NS
+                </option>
+                <option value="HINDALCO.NS">    Hindalco: HINDALCO.NS
+                </option>
+                <option value="ASHOKLEY.NS">    Ashok Leyland: ASHOKLEY.NS
+                </option>
+                <option value="HDFCBANK.NS">    HDFC Bank: HDFCBANK.NS
+                </option>
+                <option value="RELIANCE.NS">    Reliance: RELIANCE.NS
+                </option>
+                <option value="ZEEL.NS">    ZEE: ZEEL.NS
+                </option>
+                <option value="IOC.NS">    Indian Oil Corp: IOC.NS
+                </option>
+                <option value="TATASTEEL.NS">    Tata Steel: TATASTEEL.NS
+                </option>
+                <option value="POWERGRID.NS">    Power Grid Corp of India: POWERGRID.NS
+                </option>
+                <option value="KOTAKBANK.NS">    Kotak Bank: KOTAKBANK.NS
+                </option>
+                <option value="NTPC.NS">    NTPC Ltd: NTPC.NS
+                </option>
+                <option value="INFY.NS">    Infosys Ltd: INFY.NS
+                </option>
+                <option value="CIPLA.NS">    Cipla Ltd: CIPLA.NS
+                </option>
+                <option value="GAIL.NS'">    Gail India Ltd: GAIL.NS
+                </option>
+                <option value="ONGC.NS">    ONGC: ONGC.NS
+                </option>
+                <option value="M&M.NS">    Mahindra & Mahindra Ltd: M&M.NS
+                </option>
+                <option value="COALINDIA.NS">    Coal India Ltd: COALINDIA.NS
+                </option>
+                <option value="DABUR.NS">    Dabur India: DABUR.NS
+                </option>
+                <option value="DLF.NS">DLF: DLF.NS
+                </option>
+                <option value="BAJFINANCE.NS">Bajaj Finance: BAJFINANCE.NS
+                </option>
+                <option value="MUTHOOTFIN.NS">Muthoot Finance: MUTHOOTFIN.NS
+                </option>
+                <option value="UNIONBANK.NS">Union Bank: UNIONBANK.NS
+                </option>
+                <option value="APOLLOTYRE.NS">Apollo Tyres: APOLLOTYRE.NS
+                </option>
+                <option value="INFRATEL.NS">Bharti Infratel: INFRATEL.NS
+                </option>
+                <option value="UJJIVAN.NS">Ujjivan Finance: UJJIVAN.NS
+                </option>
+                <option value="IOB.NS">Indian Overseas Bank: IOB.NS
+                </option>
+                <option value="YESBANK.NS">Yesbank : YESBANK.NS
+                </option>
+                <option value="HCLTECH.NS">HCL Technologies: HCLTECH.NS
+                </option>
+                <option value="SUNPHARMA.NS">Sun Pharma : SUNPHARMA.NS
+                </option>
+                <option value="AMBUJACEM.NS">Ambuja Cements: AMBUJACEM.NS
+                </option>
+                <option value="BANKINDIA.NS">Bank of India: BANKINDIA.NS
+                </option>
+                <option value="BPCL.NS">BPCL: BPCL.NS
+                </option>
+                <option value="TCS.NS">TCS: TCS.NS
+                </option>
+                <option value="TECHM.NS">Tech Mahindra: TECHM.NS
+                </option>
+                <option value="LT.NS">L&T Ltd: LT.NS
+                </option>
+                <option value="HAVELLS.NS">Havells Ltd: HAVELLS.NS
+                </option>
+                <option value="ADANIENT.NS">Adani Enterprises: ADANIENT.NS
+                </option>
+                <option value="GLENMARK.NS">Glenmark Pharma: GLENMARK.NS
+                </option>
+                <option value="MTNL.NS">MTNL: MTNL.NS
+                </option>
+                <option value="PNB.BO">Punjab National Bank: PNB.BO
+                </option>
+            </select>
+            <input class="opt-btn" type="submit" value="Find">
+        </form>
     </div>
     <script src="/src/scripts/comparative.js"></script>
 </body>
