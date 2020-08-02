@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">  -->
+    <title>Zecide - Sector Sentiment</title>
+    <link rel="icon" href="/src/images/logo.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+    <link rel="stylesheet" href="https://harvesthq.github.io/chosen/chosen.css">
+    <link rel="stylesheet" href="/src/styles/portfolio.css">
+</head>
+
+<body>
+    <div class="upper-nav">
+        <div>
+            <div class="logo">
+                <img src="/src/images/logo.svg" alt="">
+                <span>Zecide</span>
+            </div>
+            <div class="upper-nav-1">
+                <div class="search">
+                    <input placeholder="Search.." style="border: none;" />
+                    <img src="/src/images/search.svg" />
+                </div>
+                <button class="download-btn">Download the App</button>
+            </div>
+
+
+
+
+
+            <div class="profile-dropdown">
+                <img src="/src/images/default-profile-picture.jpg" class="dropdown-img" alt="">
+                <span id="user-name">Siddharth</span>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <img class="burger dropdown-img" id="burger" src="/src/images/dropdown-button.svg"
+                            alt="burger" />
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/"> <span>Logout</span> </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- <div class="profile-dropdown">
+            <img src="/src/images/default-profile-picture.jpg" class="dropdown-img" alt="">
+            <span>Siddharth</span>
+            <img class="dropdown-btn" src="/src/images/dropdown-button.svg" alt="">
+        </div> -->
+        </div>
+    </div>
+    <div class="side-nav">
+        <div>
+            <a href="/posts/0">
+                <div class="nav-item">
+                    <img src="/src/images/feed.svg" alt="">
+                    <span>Feed</span>
+                </div>
+            </a>
+            <a href="/insights">
+                <div class="nav-item nav-item-active">
+                    <img src="/src/images/insights-active.svg" alt="">
+                    <span>Insights</span>
+                </div>
+            </a>
+            <a href="/z">
+                <div class="nav-item nav-z-part">
+                    <img src="/src/images/z-part.svg" alt="">
+                    <span>Z-Part</span>
+                </div>
+            </a>
+            <a href="/tools">
+                <div class="nav-item">
+                    <img src="/src/images/tools.svg" alt="">
+                    <span>Tools</span>
+                </div>
+            </a>
+            <a href="/users/current">
+                <div class="nav-item">
+                    <img src="/src/images/profile.svg" alt="">
+                    <span>Profile</span>
+                </div>
+            </a>
+            <div class="nav-item nav-help">
+                <img src="/src/images/help.svg" alt="">
+                <span>Help & Support</span>
+            </div>
+            <div class="nav-item nav-about-us">
+                <img src="/src/images/about.svg" alt="">
+                <span>About Us</span>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <h2>Portfolio Optimisation</h2>
+        <div class="ff">.</div>
+        <p>This tool is based on Efficient Frontier of Modern Portfolio theory. The efficient frontier is the set of optimal portfolios that offer the highest expected return for a defined level of risk or the lowest risk for a given level of expected return. Portfolios that lie below the efficient frontier are sub-optimal because they do not provide enough return for the level of risk.
+
+            The plot shows all the portfolio constructed. Tables show the weightages of the stocks to be bought for the desired portfolio type (Here choosing between Max Sharpe or Low Volatility). The weightage together sum to be 1(or 100%), so you can make decisions about the amount of companies to be bought accordingly.</p>
+        <p>Select the Stocks you want to add in your Portfolio (Choose any 4)</p>
+        <div id="output"></div>
+        <form method="get">
+            <label for="startDate" class="label1">Start Date</label>
+            <input type="date" name="startDate" class="date">
+            <label for="endDate">End Date</label>
+            <input type="date" name="endDate" class="date">
+            <select data-placeholder="Select the Stocks.." name="tags[]" multiple class="chosen-select">
+                <option value="IDEA.NS">Idea: IDEA.NS</option>
+                <option value="SBIN.NS">SBI: SBIN.NS</option>
+                <option value="ICICIBANK.NS">ICICI Bank: ICICIBANK.NS</option>
+                <option value="AXISBANK.NS">Axis Bank: AXISBANK.NS</option>
+                <option value="TATAMOTORS.NS">Tata Motors: TATAMOTORS.NS</option>
+                <option value="SAIL.NS">    Steel Authority India Ltd: SAIL.NS
+                </option>
+                <option value="TATAPOWER.NS">    Tata Power: TATAPOWER.NS
+                </option>
+                <option value="RBLBANK.NS">    RBL Bank: RBLBANK.NS
+                </option>
+                <option value="BHEL.NS">    BHEL: BHEL.NS
+                </option>
+                <option value="ADANIPOWER.NS">    Adani Power: ADANIPOWER.NS
+                </option>
+                <option value="HINDALCO.NS">    Hindalco: HINDALCO.NS
+                </option>
+                <option value="ASHOKLEY.NS">    Ashok Leyland: ASHOKLEY.NS
+                </option>
+                <option value="HDFCBANK.NS">    HDFC Bank: HDFCBANK.NS
+                </option>
+                <option value="RELIANCE.NS">    Reliance: RELIANCE.NS
+                </option>
+                <option value="ZEEL.NS">    ZEE: ZEEL.NS
+                </option>
+                <option value="IOC.NS">    Indian Oil Corp: IOC.NS
+                </option>
+                <option value="TATASTEEL.NS">    Tata Steel: TATASTEEL.NS
+                </option>
+                <option value="POWERGRID.NS">    Power Grid Corp of India: POWERGRID.NS
+                </option>
+                <option value="KOTAKBANK.NS">    Kotak Bank: KOTAKBANK.NS
+                </option>
+                <option value="NTPC.NS">    NTPC Ltd: NTPC.NS
+                </option>
+                <option value="INFY.NS">    Infosys Ltd: INFY.NS
+                </option>
+                <option value="CIPLA.NS">    Cipla Ltd: CIPLA.NS
+                </option>
+                <option value="GAIL.NS'">    Gail India Ltd: GAIL.NS
+                </option>
+                <option value="ONGC.NS">    ONGC: ONGC.NS
+                </option>
+                <option value="M&M.NS">    Mahindra & Mahindra Ltd: M&M.NS
+                </option>
+                <option value="COALINDIA.NS">    Coal India Ltd: COALINDIA.NS
+                </option>
+                <option value="DABUR.NS">    Dabur India: DABUR.NS
+                </option>
+                <option value="DLF.NS">DLF: DLF.NS
+                </option>
+                <option value="BAJFINANCE.NS">Bajaj Finance: BAJFINANCE.NS
+                </option>
+                <option value="MUTHOOTFIN.NS">Muthoot Finance: MUTHOOTFIN.NS
+                </option>
+                <option value="UNIONBANK.NS">Union Bank: UNIONBANK.NS
+                </option>
+                <option value="APOLLOTYRE.NS">Apollo Tyres: APOLLOTYRE.NS
+                </option>
+                <option value="INFRATEL.NS">Bharti Infratel: INFRATEL.NS
+                </option>
+                <option value="UJJIVAN.NS">Ujjivan Finance: UJJIVAN.NS
+                </option>
+                <option value="IOB.NS">Indian Overseas Bank: IOB.NS
+                </option>
+                <option value="YESBANK.NS">Yesbank : YESBANK.NS
+                </option>
+                <option value="HCLTECH.NS">HCL Technologies: HCLTECH.NS
+                </option>
+                <option value="SUNPHARMA.NS">Sun Pharma : SUNPHARMA.NS
+                </option>
+                <option value="AMBUJACEM.NS">Ambuja Cements: AMBUJACEM.NS
+                </option>
+                <option value="BANKINDIA.NS">Bank of India: BANKINDIA.NS
+                </option>
+                <option value="BPCL.NS">BPCL: BPCL.NS
+                </option>
+                <option value="TCS.NS">TCS: TCS.NS
+                </option>
+                <option value="TECHM.NS">Tech Mahindra: TECHM.NS
+                </option>
+                <option value="LT.NS">L&T Ltd: LT.NS
+                </option>
+                <option value="HAVELLS.NS">Havells Ltd: HAVELLS.NS
+                </option>
+                <option value="ADANIENT.NS">Adani Enterprises: ADANIENT.NS
+                </option>
+                <option value="GLENMARK.NS">Glenmark Pharma: GLENMARK.NS
+                </option>
+                <option value="MTNL.NS">MTNL: MTNL.NS
+                </option>
+                <option value="PNB.BO">Punjab National Bank: PNB.BO
+                </option>
+            </select>
+            <input class="opt-btn" type="submit" value="Optimise">
+        </form>
+    </div>
+    <script src="/src/scripts/portfolio.js"></script>
+</body>
+
+</html>

@@ -33,6 +33,8 @@ function getCookie(cname) {
   return "";
   }
 
+console.log(token);
+
 function getUsername(){
   var userName = document.getElementById('user-name');
   userName.innerHTML = getCookie("UserName");

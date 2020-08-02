@@ -42,6 +42,31 @@ router.get('/Tools',function(req,res){
     res.sendFile(path.join(__dirname, "../public/tools.html"))
 })
 
+router.get('/Tools/Portfolio',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/portfolio.html"))
+})
+
+router.get('/Tools/BuySell',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/buysell.html"))
+})
+
+router.get('/Tools/bubble',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/bubble.html"))
+})
+
+router.get('/Tools/comparative',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/comparative.html"))
+})
+
+router.get('/Tools/clustering',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/clustering.html"))
+})
+
+
+router.get('/Tools/ComparisonVolume',function(req,res){
+    res.sendFile(path.join(__dirname, "../public/comparisonvolume.html"))
+})
+
 router.get('/z',function(req,res){
     res.sendFile(path.join(__dirname, "../public/zpart.html"))
 })

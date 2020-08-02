@@ -1,14 +1,44 @@
+const myHeaders = new Headers();
+var token = getCookie('token');
+myHeaders.append('authorization', 'Token ' + token);
+
 function fetchPostData(){
     var dataset;
-    fetch('http://ec2-13-232-40-202.ap-south-1.compute.amazonaws.com:8000/Posts/0')
+    fetch('http://ec2-15-206-1-218.ap-south-1.compute.amazonaws.com:8000/posts/0',{
+      method: 'get',
+      headers: myHeaders,
+  })
     .then(response => response.json())
-    .then(data => useData(data)) 
+    .then(data => useData(data))
 }
+
 fetchPostData();
 var data;
-
 var cardContainer = document.querySelector('.card-container');
 
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+      }
+  }
+  return "";
+  }
+
+function getUsername(){
+  var userName = document.getElementById('user-name');
+  userName.innerHTML = getCookie("UserName");
+}
+
+getUsername();
 
 function useData(d){
     data= d;

@@ -8,7 +8,7 @@ const secure = require("ssl-express-www");
  
 //app.use(secure);
 
-require('dotenv').config()
+const env = require('dotenv').config();
 const bodyParser = require('body-parser');
 
 //initialize routes
