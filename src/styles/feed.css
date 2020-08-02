@@ -113,6 +113,11 @@ a {
   padding: 5px 30px;
 }
 
+.notification-bell{
+  width: 2.5vw;
+  padding-top: 0.7vh;
+}
+
 .profile-dropdown {
   display: flex;
   justify-content: space-between;
@@ -553,7 +558,7 @@ a {
   .search input {
     background-color: #f8f8f8;
     border-radius: 20px;
-    width: 35vw;
+    width: 28vw;
     height: 4vh;
     color: black;
     margin-left: 15px;
@@ -576,6 +581,11 @@ a {
     border: none;
     border-radius: 20px;
     padding: 5px 30px;
+  }
+
+  .notification-bell{
+    width: 8vw;
+    padding-top: 0.6vh;
   }
 
   .profile-dropdown {
