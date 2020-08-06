@@ -16,11 +16,13 @@
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="<%= data.object.title %>">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://zecide.com/">
+  <meta name="url" property="og:url" content="www.sample.com" />
+  <script>
+      document.querySelector("meta[name=\"url\"]").setAttribute("content", window.location.href);
+  </script>
   <meta property="og:description" content="<%= data.object.metadata.description %>">
   <meta property="og:image" content="<%= data.object.metadata.cover_image.url%>">
   <meta property="og:site_name" content="Zecide">
-  <link rel="canonical" href="https://zecide.com/">
   <link rel="shortcut icon" href="../src/images/logo.svg" type="image/x-icon">
 </head>
 
