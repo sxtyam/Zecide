@@ -972,6 +972,7 @@ body::-webkit-scrollbar-thumb
 
   .download-links {
     display: flex;
+    justify-content: center;
   }
 
   .text-top {
