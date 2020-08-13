@@ -238,3 +238,13 @@ function timeSince(date) {
 //   var aDay = 24*60*60*1000;
 //   return(timeSince(new Date(Date.now()-aDay)));
 //   (timeSince(new Date(Date.now()-aDay*2)));
+const navToggle = () => {
+  var e = document.getElementById("burger"),
+    t = document.querySelector(".dropdown-content"),
+    n = "/src/images/dropdown-button.svg";
+  e.addEventListener("click", () => {
+    t.classList.toggle("dropdown-content-active");
+    e.src === n ? (e.src = "/src/images/dropdown-button.svg") : (e.src = n);
+  });
+};
+navToggle();
